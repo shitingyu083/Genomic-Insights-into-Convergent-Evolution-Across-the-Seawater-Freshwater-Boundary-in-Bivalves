@@ -36,18 +36,13 @@ nature_code_submission_R_workflow/
   outputs/
 ```
 
-`METHOD_CODE_MAP.csv` provides a manuscript-component-to-code mapping table for reviewers.
-
-Place manuscript input tables in `data/`. If a table is absent, `run_all.R` falls back to the corresponding file in `data/templates/`, which is useful for checking the workflow structure but is not intended to reproduce the manuscript results. For journal submission, the final archived package should include the real input tables in `data/`, not only the templates.
-
-For manuscript reproduction, replace every template with the archived analysis table generated from the final data freeze. The templates are schema examples only. The package is considered complete for reproduction only when all real input tables listed below are present in `data/` and the upstream command logs are archived.
+Place manuscript input tables in `data/`. If a table is absent, `run_all.R` falls back to the corresponding file in `data/templates/`, which is useful for checking the workflow structure but is not intended to reproduce the manuscript results.
 
 ## Required Input Tables
 
 Use these filenames in `data/`:
 
 - `species_metadata.csv`
-- `species_tree.nwk`
 - `genome_qc_metrics.csv`
 - `ancestral_states.csv`
 - `extant_site_states.csv`
@@ -68,16 +63,6 @@ Use these filenames in `data/`:
 - `atg7_foldx_results.csv`
 
 Column definitions are shown in `data/templates/`.
-
-## R Dependencies
-
-The workflow uses base R for table handling and requires these R packages for the phylogenetically informed analyses reported in the manuscript:
-
-- `ape`
-- `nlme`
-- `phytools`
-
-If these packages are missing, the scripts stop for analyses that require phylogenetic correction rather than silently replacing them with non-phylogenetic tests.
 
 ## Running
 
@@ -103,12 +88,6 @@ The script keeps the manuscript's conservative language:
 - `candidate parallel-substitution signals` are recurrent candidate states across informative collapsed freshwater units.
 - TE Kimura divergence is used as a relative age proxy, not as an absolute insertion-time estimate.
 - Salinity-transfer analyses in *Mercenaria mercenaria* test acute low-salinity responsiveness, not evolutionary freshwater adaptation.
-
-## Audit Documents
-
-- `METHOD_CODE_MAP.csv`: maps Methods/Results components to scripts, inputs, outputs and upstream tools.
-- `POLICY_AND_METHOD_REFERENCES.md`: summarizes the policy and method basis for this package.
-- `QA_SUMMARY.txt`: records static checks and local execution status.
 
 ## Reproducibility
 

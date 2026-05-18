@@ -1,0 +1,13 @@
+key,value
+freshwater_units,"Unionida;Dreissenidae;Corbicula;Limnoperna"
+freshwater_recurrence_min_units,2
+ancestral_posterior_min,0.80
+site_gap_max_fraction,0.30
+branch_site_q_threshold,0.05
+branch_site_beb_threshold,0.95
+enrichment_q_threshold,0.05
+gene_family_occupancy_min,0.75
+gene_family_q_threshold,0.05
+phylanova_nsim,10000
+aa_pseudocount_rule,"half_min_nonzero"
+random_seed,20260517

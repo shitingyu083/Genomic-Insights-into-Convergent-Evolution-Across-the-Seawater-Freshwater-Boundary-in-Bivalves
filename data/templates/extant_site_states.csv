@@ -1,0 +1,7 @@
+gene,position,species_id,amino_acid,gap_fraction_column_optional
+example_gene,1,Pst,M,0
+example_gene,1,Cfl,M,0
+example_gene,1,Dpo,M,0
+example_gene,1,Dro,M,0
+example_gene,1,Lfo,M,0
+example_gene,1,Sbr,A,0

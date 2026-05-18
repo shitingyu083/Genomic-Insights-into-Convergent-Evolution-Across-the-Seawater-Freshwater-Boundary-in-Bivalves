@@ -1,0 +1,2 @@
+gene,position,lnL_null,lnL_alt,beb_posterior,foreground_set
+example_gene,1,-100.5,-96.2,0.98,Unionida

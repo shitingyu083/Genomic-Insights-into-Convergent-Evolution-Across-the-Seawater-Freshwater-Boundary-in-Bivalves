@@ -1,0 +1,3 @@
+gene_symbol,treatment,replicate,normalized_expression
+ATG7,NS,rep1,NA
+ATG7,AL1,rep1,NA

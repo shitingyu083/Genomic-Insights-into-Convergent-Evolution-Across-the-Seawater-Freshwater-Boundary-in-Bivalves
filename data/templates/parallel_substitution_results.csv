@@ -1,0 +1,2 @@
+gene,position,candidate_state,note
+example_gene,1,M,optional_external_parallel_call

@@ -1,0 +1,13 @@
+species_id,species_name,habitat,habitat_binary,freshwater_unit,is_outgroup,include_42_bivalves,include_site_level
+Pst,Potamilus streckersoni,freshwater,freshwater,Unionida,false,true,true
+Cfl,Corbicula fluminea,freshwater,freshwater,Corbicula,false,true,true
+Dpo,Dreissena polymorpha,freshwater,freshwater,Dreissenidae,false,true,true
+Dro,Dreissena rostriformis,freshwater,freshwater,Dreissenidae,false,true,true
+Lfo,Limnoperna fortunei,freshwater,freshwater,Limnoperna,false,true,true
+Sol,Sinosolenaia oleivora,freshwater,freshwater,Unionida,false,true,true
+Awo,Anodonta woodiana,freshwater,freshwater,Unionida,false,true,true
+Ude,Unio delphinus,freshwater,freshwater,Unionida,false,true,true
+Sbr,Scapharca broughtonii,euhaline_seawater,seawater_group,,false,true,true
+Mye,Mizuhopecten yessoensis,euhaline_seawater,seawater_group,,false,true,true
+Mme,Mercenaria mercenaria,euhaline_seawater,seawater_group,,false,true,true
+Lgi,Lottia gigantea,outgroup,outgroup,,true,false,false

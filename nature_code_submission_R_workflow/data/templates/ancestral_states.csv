@@ -1,0 +1,2 @@
+gene,position,node,amino_acid,posterior_probability
+example_gene,1,node_for_freshwater_unit_or_background,M,0.95

@@ -1,0 +1,2 @@
+species_id,assembly_span_mb,coding_region_length,noncoding_region_length,total_intron_length,intron_number,first_intron_length,total_exon_length,exon_number,mean_exon_length,busco_complete,busco_duplicated,scaffold_n50,annotated_gene_number
+Pst,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

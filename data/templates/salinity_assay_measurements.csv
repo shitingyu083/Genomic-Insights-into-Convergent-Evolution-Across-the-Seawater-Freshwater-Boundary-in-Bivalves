@@ -1,0 +1,3 @@
+assay,individual_id,treatment_psu,time_point,value,unit,batch
+Atg7_qPCR,ind1,10,recorded_time,NA,relative_expression,batch1
+FAA,ind1,10,recorded_time,NA,mg_g,batch1

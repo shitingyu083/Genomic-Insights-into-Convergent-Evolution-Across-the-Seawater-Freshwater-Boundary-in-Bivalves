@@ -1,0 +1,4 @@
+species_id,busco_single,busco_duplicated,busco_fragmented,busco_missing,assembly_span_mb,scaffold_n50,annotated_gene_number,gc_fraction
+Pst,NA,NA,NA,NA,NA,NA,NA,NA
+Cfl,NA,NA,NA,NA,NA,NA,NA,NA
+Mme,NA,NA,NA,NA,NA,NA,NA,NA

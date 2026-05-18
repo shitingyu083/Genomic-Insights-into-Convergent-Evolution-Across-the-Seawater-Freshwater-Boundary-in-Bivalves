@@ -1,0 +1,2 @@
+gene,position,lnL_species_tree,lnL_freshwater_constrained,site_class
+example_gene,1,-10.2,-9.8,candidate_parallel

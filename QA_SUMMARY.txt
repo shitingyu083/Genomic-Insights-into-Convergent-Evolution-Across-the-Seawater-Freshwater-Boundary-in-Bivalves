@@ -1,0 +1,34 @@
+Nature code submission workflow QA summary
+Date: 2026-05-17
+
+Package contents:
+- Modular R workflow with run_all.R and nine R modules.
+- Input templates for all manuscript analysis components.
+- External software command templates for BUSCO, OrthoMCL, IQ-TREE, PAML, RAxML, RepeatModeler2/RepeatMasker/LTR_retriever, RNA-seq processing, ColabFold and FoldX.
+- README, Code Availability text, validation report and file manifest.
+
+Static checks:
+- No development-marker strings were detected after cleanup.
+- No Unicode replacement characters were detected.
+- Workflow text files are ASCII-only after README normalization.
+- ZIP package uses standard forward-slash paths.
+
+Method-consistency checks:
+- Fsite screening now records both strict derived recurrence and freshwater-associated recurrence, and requires recurrence across collapsed freshwater units plus seawater-group alternative-state support.
+- Genome architecture and amino-acid composition analyses require phylogenetically informed PGLS through ape/nlme.
+- Gene-family copy-number analysis requires phytools phylANOVA and BH-FDR correction.
+- Branch-site positive-selection signal summaries report both conservative chi-square(1) and 50:50 mixture-null P values.
+- Experimental salinity-assay summaries include global and pairwise treatment tests for Source Data.
+
+Policy checks:
+- README, METHOD_CODE_MAP, external command templates, file manifest and runtime sessionInfo output support Nature-style code availability and reproducibility.
+- The package distinguishes R-side statistical summaries from upstream external bioinformatic programs.
+
+Execution:
+- R execution was not performed in this environment because Rscript was not available on PATH and no standard Windows Rscript.exe installation was found.
+- Run with: cd nature_code_submission_R_workflow && Rscript run_all.R
+- The current archive contains input schemas. Full manuscript-number reproduction requires replacing template files with the final real input tables in data/.
+
+Interpretation boundary:
+- The workflow reproduces R-side summary statistics, candidate-set overlaps, BH-FDR corrections, Source Data tables and figure-input tables from standardized upstream outputs.
+- External phylogenomic, repeat-annotation, transcriptome and structure-prediction programs must be run separately using the archived commands and parameters.

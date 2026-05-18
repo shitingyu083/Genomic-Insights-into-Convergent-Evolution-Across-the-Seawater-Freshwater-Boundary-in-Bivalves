@@ -1,0 +1,22 @@
+Nature code submission workflow QA summary
+Date: 2026-05-17
+
+Package contents:
+- Modular R workflow with run_all.R and nine R modules.
+- Input templates for all manuscript analysis components.
+- External software command templates for BUSCO, OrthoMCL, IQ-TREE, PAML, RAxML, RepeatModeler2/RepeatMasker/LTR_retriever, RNA-seq processing, ColabFold and FoldX.
+- README, Code Availability text, validation report and file manifest.
+
+Static checks:
+- No development-marker strings were detected after cleanup.
+- No Unicode replacement characters were detected.
+- Workflow text files are ASCII-only after README normalization.
+- ZIP package uses standard forward-slash paths.
+
+Execution:
+- R execution was not performed in this environment because Rscript was not available on PATH and no standard Windows Rscript.exe installation was found.
+- Run with: cd nature_code_submission_R_workflow && Rscript run_all.R
+
+Interpretation boundary:
+- The workflow reproduces R-side summary statistics, candidate-set overlaps, BH-FDR corrections, Source Data tables and figure-input tables from standardized upstream outputs.
+- External phylogenomic, repeat-annotation, transcriptome and structure-prediction programs must be run separately using the archived commands and parameters.
