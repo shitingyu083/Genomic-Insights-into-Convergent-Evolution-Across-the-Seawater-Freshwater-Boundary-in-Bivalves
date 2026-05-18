@@ -1,4 +1,4 @@
-# Nature Code Submission R Workflow
+# Code Submission R Workflow
 
 This directory contains a reproducible R workflow for the manuscript analyses associated with freshwater colonization in bivalves. It is designed for submission as Supplementary Software or for archiving with a DOI.
 
