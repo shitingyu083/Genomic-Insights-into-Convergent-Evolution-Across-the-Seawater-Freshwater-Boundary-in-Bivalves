@@ -1,3 +1,4 @@
 assay,individual_id,treatment_psu,time_point,value,unit,batch
-Atg7_qPCR,ind1,10,recorded_time,NA,relative_expression,batch1
-FAA,ind1,10,recorded_time,NA,mg_g,batch1
+Atg7_qPCR,ind1,10,single,NA,relative_expression,batch1
+FAA,ind1,10,single,NA,mg_g,batch1
+flow_cytometry,ind1,10,single,NA,percent_cells,batch1

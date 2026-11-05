@@ -71,8 +71,13 @@ run_te_summaries <- function(paths, outdir) {
     kim$assembly_fraction <- kim$te_bp / kim$assembly_span_bp
     kim$kimura_bin <- cut(kim$kimura_divergence_percent, breaks = seq(0, 60, by = 2),
                           include.lowest = TRUE, right = FALSE)
-    summary <- aggregate(assembly_fraction ~ species_id + kimura_bin, kim, sum, na.rm = TRUE)
-    write_table(summary, file.path(outdir, "source_fig4d_te_kimura_relative_age_proxy.csv"))
+    kim <- kim[!is.na(kim$assembly_fraction) & !is.na(kim$kimura_bin), , drop = FALSE]
+    if (nrow(kim) == 0) {
+      message("[te] te_kimura_bins has no complete rows; Kimura relative-age summary skipped")
+    } else {
+      summary <- aggregate(assembly_fraction ~ species_id + kimura_bin, kim, sum, na.rm = TRUE)
+      write_table(summary, file.path(outdir, "source_fig4d_te_kimura_relative_age_proxy.csv"))
+    }
   }
   invisible(TRUE)
 }

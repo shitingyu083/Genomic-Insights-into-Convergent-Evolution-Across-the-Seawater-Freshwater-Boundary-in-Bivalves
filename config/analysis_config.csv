@@ -1,10 +1,8 @@
 key,value
 freshwater_units,"Unionida;Dreissenidae;Corbicula;Limnoperna"
-freshwater_recurrence_min_units,2
-ancestral_posterior_min,0.80
+fsite_target_taxa,"Awo;Cfl;Dpo;Dro;Lfo;Pst;Ude"
+fsite_min_target_taxa,3
 site_gap_max_fraction,0.30
-seawater_alternative_min_fraction,0.50
-seawater_informative_min_taxa,4
 branch_site_q_threshold,0.05
 branch_site_beb_threshold,0.95
 enrichment_q_threshold,0.05

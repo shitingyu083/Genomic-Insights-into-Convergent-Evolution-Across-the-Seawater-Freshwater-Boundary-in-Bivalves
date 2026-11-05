@@ -29,6 +29,7 @@ paths <- list(
   species_tree = path_or_template("species_tree.nwk"),
   genome_qc = path_or_template("genome_qc_metrics.csv"),
   ancestral_states = path_or_template("ancestral_states.csv"),
+  fsite_origin_branches = path_or_template("fsite_origin_branches.csv"),
   extant_site_states = path_or_template("extant_site_states.csv"),
   site_annotations = path_or_template("site_annotations.csv"),
   branch_site_results = path_or_template("branch_site_results.csv"),
@@ -42,6 +43,7 @@ paths <- list(
   te_kimura_bins = path_or_template("te_kimura_bins.csv"),
   amino_acid_counts = path_or_template("amino_acid_counts.csv"),
   salinity_assay_measurements = path_or_template("salinity_assay_measurements.csv"),
+  salinity_comparisons = path_or_template("salinity_comparisons.csv"),
   public_transcriptome_expression = path_or_template("public_transcriptome_expression.csv"),
   public_transcriptome_deseq2 = path_or_template("public_transcriptome_deseq2.csv"),
   atg7_foldx_results = path_or_template("atg7_foldx_results.csv")
@@ -50,7 +52,7 @@ paths <- list(
 message_step("1/9 sampling and genome QC")
 run_sampling_qc(paths, outdir)
 
-message_step("2/9 Fsite, branch-site positive-selection signals, candidate parallel substitutions and SSLS")
+message_step("2/9 Fsite (R1 definition), branch-site positive-selection signals, candidate parallel substitutions and SSLS")
 run_site_level_workflow(paths, outdir, config)
 
 message_step("3/9 pathway enrichment")

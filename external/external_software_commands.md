@@ -108,3 +108,29 @@ Required R input:
 
 - `data/atg7_foldx_results.csv`
 
+## R1 revision: upstream programs and versions
+
+The R1 reanalyses used the programs below. Exact command lines are in the shell and Python scripts under `R1_reanalysis/_R1_work/`.
+
+- Species tree: IQ-TREE v2.4.0 on the concatenated single-copy supermatrix (`analysis/iqtree_rerun/server/run_iqtree.sh`, `run_iqtree_phase2.sh`); the OrthoFinder species tree is the reference topology for ancestral reconstruction (`analysis/iqtree_rerun/compare_topology.R`, `node_support.R`).
+- Ancestral reconstruction and Fsite records: PAML v4.9j codeml (AAML, JTT+F) on 99 orthogroups (`remote/build_asr.py`, `server_data/asr_v4/run_all.sh`, `analysis/paml_parse.py`); Fsite scan reproduced by `analysis/r2m1_fsite/scan_reproduce.py`; Table S6 step counts by `analysis/r2m1_fsite/s6_steps.py` and `analysis/tables/build_S6.py`.
+- Null-model tests of recurrent substitutions (JTT-fgene, JTT-fsite): `analysis/conv_core.py`, `reanalysis/A_convergence.py`, `reanalysis/A8_stem_specific.py`, `analysis/tables/build_S7.py`.
+- Branch-site tests: PAML codeml branch-site model A (`analysis/bsite/bsite.py`, `analysis/bsite/final_chain.sh`).
+- Gene-family expansion: CAFE5 on an ultrametric OrthoFinder tree (`analysis/bsite/ultra_tree.R`, `cafe_prep.py`, `cafe_main.sh`, `cafe_tests.sh`, `cafe_fw.py`).
+- SSLS: RAxML v8.2.12 `-f G` (`analysis/ssls/results/final/ssls.sh`, `ssls_gene.py`, `ssls_pool.py`, `analysis/ssls/ssls_stats.py`).
+- Fig. 3b gene trees: MAFFT L-INS-i and IQ-TREE 2.4.0 with ModelFinder and 1,000 ultrafast bootstraps (`analysis/fig3b_rebuild/server/extract.py`, `run_fig3b.sh`, `analysis/fig3b/fig3b_trees_R1.py`).
+- Genome completeness for Table S1: BUSCO 5.7.1, protein mode, mollusca_odb10 (`analysis/tableS1/server/run_busco.sh`, `busco_collapse.py`).
+- Functional annotation: orthogroup names from the original FASTA headers (`analysis/annotate_ogs.py`); eggNOG-mapper/KEGG annotation (`analysis/bsite/kegg_map.py`, `analysis/enrich/enrich_candidates.py`).
+- PGLS (assembly span, gene families, amino-acid composition): R packages ape and nlme (`analysis/pgls_span/`, `analysis/genefam20/`, `analysis/aa/`).
+
+## R1 revision: public RNA-seq (Fig. 6f)
+
+The R1 analysis replaces the fastp/HISAT2/featureCounts template above with transcript quantification:
+
+```bash
+salmon index -t GCF_014805675.1_rna.fna -i salmon_idx
+salmon quant -i salmon_idx -l A -1 reads_1.fastq -2 reads_2.fastq --validateMappings -o quant/<sample>
+Rscript de.R
+```
+
+`R1_reanalysis/_R1_work/fig6f_de/run2.sh` downloads the RefSeq GCF_014805675.1 transcripts and annotation, fetches the 21 SRA runs listed in `samples.tsv`, and runs salmon v1.4.0. `de.R` sums transcript counts to genes, keeps genes with at least 10 counts in at least three samples, fits DESeq2 with design `~ trt` (reference NS) and writes the contrasts AH1, AH5, CH, AL1, AL5 and CL against NS.

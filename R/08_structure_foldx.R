@@ -5,6 +5,10 @@ run_structure_foldx <- function(paths, outdir) {
   if (is.null(foldx)) return(invisible(NULL))
   require_cols(foldx, c("gene", "site", "substitution", "run_id", "ddg_kcal_mol"), "atg7_foldx_results")
   foldx$ddg_kcal_mol <- as_num(foldx$ddg_kcal_mol)
+  if (!any(!is.na(foldx$ddg_kcal_mol))) {
+    message("[foldx] atg7_foldx_results has no ddG values; FoldX summary skipped")
+    return(invisible(NULL))
+  }
   summary <- aggregate(ddg_kcal_mol ~ gene + site + substitution, foldx, function(z) {
     c(n = sum(!is.na(z)), mean = mean(z, na.rm = TRUE), sd = stats::sd(z, na.rm = TRUE))
   })

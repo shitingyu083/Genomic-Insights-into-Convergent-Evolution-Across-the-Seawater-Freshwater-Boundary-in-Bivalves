@@ -1,0 +1,6 @@
+assay,treatment_1,treatment_2,adjust_method
+Atg7_qPCR,10,5,bonferroni
+Atg7_qPCR,5,0,bonferroni
+Atg7_qPCR,10,0,bonferroni
+FAA,10,5,BH
+FAA,5,0,BH

@@ -1,3 +1,27 @@
+R1 revision QA summary
+Date: 2026-11-05
+
+Static checks:
+- Every .R file parses with R 4.6.1; every .py file compiles (py_compile); every .sh file passes bash -n.
+- No absolute paths to the authors' machines, server addresses or credentials remain; paths use IZ_ROOT, R1_WORK, R0_DATA and CONDA_BASE. Path strings use forward slashes, so the scripts run on Linux and Windows.
+
+Execution test (Linux server, R 4.4.3 with ape 5.8.1 and nlme 3.1.169; Python 3 with numpy 1.26.4, pandas 2.2.2, scipy 1.13.1):
+- Rscript run_all.R on the templates completes all nine modules. With all-NA template columns, R/05, R/07 and R/08 now skip the affected tests and write NA rows instead of stopping.
+- tests/run_r1_tests.sh ran 28 downstream R1 steps on a scratch copy of the repository, using only the data shipped here; all 28 exited with status 0. tests/compare_outputs.py (text tables) and tests/compare_xlsx.py (spreadsheet cell values) then compared every regenerated output with the shipped file.
+- Byte-identical or numerically equal (relative tolerance 1e-6) to the shipped results: Fsite scan and Table S6 step counts; null-model tests A1-A6 and A8; SSLS gene and site tables, tests and summary; node support; assembly-span PGLS (reference and IQ-TREE trees); lambda profile; Fig. 4a check; BUSCO-rerun sensitivity; amino-acid and GC PGLS; gene-family Wilcoxon tests; orthogroup annotation; Supplementary Tables S1, S6, S7 and S8.
+- Gene-family PGLS (analysis/genefam20/genefam20_pgls.R) and Supplementary Table S4: models 1-8 and 11-16 reproduce exactly. Models 9 and 10 use an ultrametric tree from ape::chronos (set.seed(1)); its optimiser gives slightly different branch lengths under R 4.4.3 than under R 4.6.1, the version used for the shipped results. Across these 159 rows the largest change is 0.0006 in lambda and 0.0005 in q; the sets with P < 0.05 (306 rows) and q < 0.05 (172 rows) are unchanged.
+- A7 regression: differences at the 1e-13 level (floating point).
+- Bug fixed during the test: analysis/ssls/ssls_stats.py read its result files in file-system order, so the stratum order of the permutation test, and thus one P_perm value (0.5748 vs 0.5739), depended on the operating system. The file list is now sorted; the server rerun then matched the shipped tables byte for byte.
+
+Not re-run here (they need genome assemblies, PAML, HyPhy, RAxML, IQ-TREE runs or the OrthoFinder working directory, which are not shipped; their outputs are shipped as inputs to the steps above): branch-site and SSLS per-gene runs, CAFE5, KEGG mapping, CDS mapping, supermatrix and ancestral-state builders, BUSCO collapse, NCBI/WoRMS queries, salmon quantification (fig6f_de/run2.sh, de.R) and the gene-family count generator. Figure scripts that need pymupdf were not run.
+
+Unit tests on constructed inputs:
+- R/02: a residue shared by three target taxa and absent from non-freshwater taxa passes filter 2; the same residue present in one seawater-group taxon fails; a residue shared by two target taxa is not a candidate; without fsite_origin_branches.csv filter 1 is NA.
+- R/07: Welch t P values equal stats::t.test; Fig. 6a q = min(1, 3P); Fig. 6d q = Benjamini-Hochberg over two comparisons.
+
+Data: the genomic data used by the R1 reanalysis are included (DATA_README.md, DATA_MANIFEST.csv). The salinity-transfer assay measurements are not included; data/templates/ shows their schema.
+
+----- Original submission QA (2026-05-17) -----
 Nature code submission workflow QA summary
 Date: 2026-05-17
 

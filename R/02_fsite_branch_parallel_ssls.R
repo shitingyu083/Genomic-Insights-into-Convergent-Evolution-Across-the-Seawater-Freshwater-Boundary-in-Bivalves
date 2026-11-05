@@ -1,115 +1,76 @@
 source(file.path("R", "00_utils.R"))
 
-infer_unit_state <- function(states, metadata) {
-  x <- merge(states, metadata[, c("species_id", "habitat_binary", "freshwater_unit")],
-             by = "species_id", all.x = TRUE)
-  fw <- subset(x, habitat_binary == "freshwater" & !is.na(freshwater_unit) & freshwater_unit != "")
-  if (!nrow(fw)) return(data.frame())
-  split_fw <- split(fw, fw$freshwater_unit)
-  out <- lapply(names(split_fw), function(unit) {
-    y <- split_fw[[unit]]
-    aa <- unique(y$amino_acid[!is.na(y$amino_acid) & y$amino_acid != "" & y$amino_acid != "-"])
-    state <- if (length(aa) == 1) aa else NA_character_
-    data.frame(freshwater_unit = unit, unit_state = state, informative = !is.na(state))
-  })
-  do.call(rbind, out)
+AMINO_ACIDS <- strsplit("ACDEFGHIKLMNPQRSTVWY", "")[[1]]
+
+empty_fsite_table <- function() {
+  data.frame(
+    gene = character(), position = character(), fw_mrca_state = character(), derived_state = character(),
+    n_target_taxa = integer(), target_taxa = character(), n_units_sharing = integer(),
+    units_sharing = character(), filter1_unit_stem_origin = logical(),
+    filter2_absent_nonfreshwater = logical(), descriptor_two_or_more_units = logical(),
+    fsite_pass = logical()
+  )
 }
 
-screen_fsite <- function(extant, metadata, ancestral = NULL, min_units = 2,
-                         ancestral_posterior_min = 0.80,
-                         seawater_alternative_min_fraction = 0.50,
-                         seawater_informative_min_taxa = 4) {
+# R1 Fsite screen (Methods, Fsite screening). One record is one derived freshwater residue at one column.
+# Candidate set: the residue differs from the reconstructed FW-MRCA state and is shared by at least
+# `min_target_taxa` freshwater target taxa; no lineage-number, probability or FDR threshold is applied.
+# Filter 1: the derived residue arose on a freshwater-unit stem (from `origin`, written by
+#   R1_reanalysis/_R1_work/analysis/r2m1_fsite/scan_reproduce.py from the codeml node states).
+# Filter 2: the derived residue is absent from all non-freshwater taxa, the outgroup included.
+# Sharing by two or more freshwater units is recorded as a descriptor, not used as a filter.
+screen_fsite <- function(extant, metadata, ancestral, origin = NULL, target_taxa, min_target_taxa = 3) {
   require_cols(extant, c("gene", "position", "species_id", "amino_acid"), "extant_site_states")
+  require_cols(ancestral, c("gene", "position", "node", "ancestral_state"), "ancestral_states")
   metadata <- standardize_species_metadata(metadata)
+  extant$position <- as.character(extant$position)
   extant <- merge(extant, metadata[, c("species_id", "habitat_binary", "freshwater_unit")],
                   by = "species_id", all.x = TRUE)
   extant$key <- paste(extant$gene, extant$position, sep = "::")
-  if (!is.null(ancestral)) {
-    require_cols(
-      ancestral,
-      c("gene", "position", "freshwater_unit", "ancestral_state", "posterior_probability"),
-      "ancestral_states"
-    )
-    ancestral$posterior_probability <- as_num(ancestral$posterior_probability)
-    ancestral$key <- paste(ancestral$gene, ancestral$position, sep = "::")
-  }
-  keys <- unique(extant$key)
+  mrca <- ancestral[ancestral$node == "FW_MRCA", , drop = FALSE]
+  mrca_state <- stats::setNames(as.character(mrca$ancestral_state),
+                                paste(mrca$gene, as.character(mrca$position), sep = "::"))
+  is_residue <- function(a) !is.na(a) & a %in% AMINO_ACIDS
 
-  res <- lapply(keys, function(k) {
-    z <- extant[extant$key == k, ]
-    units <- infer_unit_state(z[, c("gene", "position", "species_id", "amino_acid")], metadata)
-    informative <- subset(units, informative)
-    if (!nrow(informative)) {
-      return(data.frame(
-        gene = z$gene[1], position = z$position[1], candidate_state = NA,
-        n_informative_units = 0, n_recurrent_units = 0,
-        recurrent_units = "",
-        derived_recurrent_units = "",
-        n_derived_recurrent_units = 0,
-        recurrence_mode = "uninformative",
-        n_seawater_informative_taxa = 0,
-        seawater_alternative_fraction = NA_real_,
-        ancestral_supported = FALSE,
-        fsite_pass = FALSE
-      ))
-    }
-    seawater <- subset(z, habitat_binary == "seawater_group")
-    seawater_states <- seawater$amino_acid[!is.na(seawater$amino_acid) &
-                                             seawater$amino_acid != "" &
-                                             seawater$amino_acid != "-"]
-    n_seawater <- length(seawater_states)
-    tab <- sort(table(informative$unit_state), decreasing = TRUE)
-    candidate_state <- names(tab)[1]
-    n_rec <- as.integer(tab[1])
-    rec_units <- informative$freshwater_unit[informative$unit_state == candidate_state]
-
-    seawater_alt_fraction <- if (n_seawater > 0) mean(seawater_states != candidate_state) else NA_real_
-    ancestral_supported <- NA
-    n_derived_units <- NA_integer_
-    derived_units <- ""
-    if (!is.null(ancestral)) {
-      anc <- ancestral[ancestral$key == k &
-                        ancestral$freshwater_unit %in% rec_units &
-                        ancestral$posterior_probability >= ancestral_posterior_min, , drop = FALSE]
-      if (nrow(anc)) {
-        derived <- anc$freshwater_unit[anc$ancestral_state != candidate_state]
-        derived_units <- paste(unique(derived), collapse = ";")
-        n_derived_units <- length(unique(derived))
-        ancestral_supported <- n_derived_units >= min_units
-      } else {
-        ancestral_supported <- FALSE
-        n_derived_units <- 0L
-      }
-    }
-    if (is.na(ancestral_supported)) {
-      ancestral_supported <- TRUE
-    }
-    recurrence_mode <- if (!is.null(ancestral) && isTRUE(ancestral_supported)) {
-      "derived_recurrence"
-    } else {
-      "freshwater_associated_recurrence"
-    }
-
-    data.frame(
-      gene = z$gene[1],
-      position = z$position[1],
-      candidate_state = candidate_state,
-      n_informative_units = nrow(informative),
-      n_recurrent_units = n_rec,
-      recurrent_units = paste(rec_units, collapse = ";"),
-      derived_recurrent_units = derived_units,
-      n_derived_recurrent_units = n_derived_units,
-      recurrence_mode = recurrence_mode,
-      n_seawater_informative_taxa = n_seawater,
-      seawater_alternative_fraction = seawater_alt_fraction,
-      ancestral_supported = ancestral_supported,
-      fsite_pass = n_rec >= min_units &&
-        n_seawater >= seawater_informative_min_taxa &&
-        !is.na(seawater_alt_fraction) &&
-        seawater_alt_fraction >= seawater_alternative_min_fraction
-    )
+  res <- lapply(split(extant, extant$key), function(z) {
+    anc <- unname(mrca_state[z$key[1]])
+    if (!length(anc) || is.na(anc)) return(NULL)
+    tg <- z[z$species_id %in% target_taxa & is_residue(z$amino_acid), , drop = FALSE]
+    derived <- tg[tg$amino_acid != anc, , drop = FALSE]
+    if (!nrow(derived)) return(NULL)
+    tab <- table(derived$amino_acid)
+    keep <- names(tab)[tab >= min_target_taxa]
+    if (!length(keep)) return(NULL)
+    nonfw <- z$amino_acid[!is.na(z$habitat_binary) & z$habitat_binary != "freshwater" &
+                            is_residue(z$amino_acid)]
+    do.call(rbind, lapply(keep, function(s) {
+      sp <- derived$species_id[derived$amino_acid == s]
+      units <- unique(derived$freshwater_unit[derived$amino_acid == s])
+      units <- units[!is.na(units) & nzchar(units)]
+      data.frame(
+        gene = z$gene[1], position = z$position[1], fw_mrca_state = anc, derived_state = s,
+        n_target_taxa = length(sp), target_taxa = paste(sort(sp), collapse = ";"),
+        n_units_sharing = length(units), units_sharing = paste(sort(units), collapse = ";"),
+        filter2_absent_nonfreshwater = !(s %in% nonfw)
+      )
+    }))
   })
-  do.call(rbind, res)
+  out <- do.call(rbind, res)
+  if (is.null(out) || !nrow(out)) return(empty_fsite_table())
+
+  if (!is.null(origin)) {
+    require_cols(origin, c("gene", "position", "derived_state", "origin_on_unit_stem"), "fsite_origin_branches")
+    origin$position <- as.character(origin$position)
+    origin$filter1_unit_stem_origin <- as.logical(origin$origin_on_unit_stem)
+    out <- merge(out, origin[, c("gene", "position", "derived_state", "filter1_unit_stem_origin")],
+                 by = c("gene", "position", "derived_state"), all.x = TRUE)
+  } else {
+    out$filter1_unit_stem_origin <- NA
+  }
+  out$descriptor_two_or_more_units <- out$n_units_sharing >= 2
+  out$fsite_pass <- out$filter1_unit_stem_origin & out$filter2_absent_nonfreshwater
+  rownames(out) <- NULL
+  out[, names(empty_fsite_table())]
 }
 
 summarize_branch_site <- function(branch_site, q_threshold = 0.05, beb_threshold = 0.95) {
@@ -127,18 +88,17 @@ summarize_branch_site <- function(branch_site, q_threshold = 0.05, beb_threshold
   branch_site
 }
 
-summarize_parallel <- function(fsite, extant_parallel = NULL, min_units = 2) {
-  if (is.null(extant_parallel)) {
-    out <- fsite
-    out$candidate_parallel_signal <- out$fsite_pass & out$n_recurrent_units >= min_units
-    return(out[, c("gene", "position", "candidate_state", "n_informative_units",
-                   "n_recurrent_units", "recurrent_units", "candidate_parallel_signal")])
+# Candidate parallel signal = Fsite record that passes both filters; with an external parallel-substitution
+# table, the record must also appear there.
+summarize_parallel <- function(fsite, extant_parallel = NULL) {
+  out <- fsite
+  out$candidate_parallel_signal <- out$fsite_pass %in% TRUE
+  if (!is.null(extant_parallel) && nrow(out)) {
+    require_cols(extant_parallel, c("gene", "position"), "parallel_substitution_results")
+    ext_key <- paste(extant_parallel$gene, as.character(extant_parallel$position), sep = "::")
+    out$in_external_parallel_table <- paste(out$gene, out$position, sep = "::") %in% ext_key
+    out$candidate_parallel_signal <- out$candidate_parallel_signal & out$in_external_parallel_table
   }
-  require_cols(extant_parallel, c("gene", "position"), "parallel_substitution_results")
-  fsite$key <- paste(fsite$gene, fsite$position, sep = "::")
-  extant_parallel$key <- paste(extant_parallel$gene, extant_parallel$position, sep = "::")
-  out <- merge(fsite, extant_parallel, by = "key", all.x = TRUE, suffixes = c("", "_external"))
-  out$candidate_parallel_signal <- out$fsite_pass & !is.na(out$gene_external)
   out
 }
 
@@ -158,15 +118,12 @@ summarize_ssls <- function(ssls) {
 run_site_level_workflow <- function(paths, outdir, config) {
   metadata <- standardize_species_metadata(read_table_auto(paths$species_metadata))
   extant <- read_table_auto(paths$extant_site_states)
-  ancestral <- read_table_auto(paths$ancestral_states, required = FALSE)
+  ancestral <- read_table_auto(paths$ancestral_states)
+  origin <- read_table_auto(paths$fsite_origin_branches, required = FALSE)
   fsite <- screen_fsite(
-    extant,
-    metadata,
-    ancestral = ancestral,
-    min_units = as.integer(config[["freshwater_recurrence_min_units"]]),
-    ancestral_posterior_min = as_num(config[["ancestral_posterior_min"]]),
-    seawater_alternative_min_fraction = as_num(config[["seawater_alternative_min_fraction"]]),
-    seawater_informative_min_taxa = as.integer(config[["seawater_informative_min_taxa"]])
+    extant, metadata, ancestral, origin = origin,
+    target_taxa = strsplit(config[["fsite_target_taxa"]], ";")[[1]],
+    min_target_taxa = as.integer(config[["fsite_min_target_taxa"]])
   )
   write_table(fsite, file.path(outdir, "table_fsite_screen.csv"))
 
@@ -183,16 +140,24 @@ run_site_level_workflow <- function(paths, outdir, config) {
   }
 
   parallel_external <- read_table_auto(paths$parallel_substitution_results, required = FALSE)
-  parallel_sum <- summarize_parallel(fsite, parallel_external,
-                                     min_units = as.integer(config[["freshwater_recurrence_min_units"]]))
+  parallel_sum <- summarize_parallel(fsite, parallel_external)
   write_table(parallel_sum, file.path(outdir, "table_candidate_parallel_substitution_signals.csv"))
 
-  overlap <- merge(
-    parallel_sum[, c("gene", "position", "candidate_parallel_signal")],
-    if (is.null(branch_sum)) data.frame(gene = character(), position = integer(), branch_site_signal = logical())
-    else branch_sum[, c("gene", "position", "branch_site_signal")],
-    by = c("gene", "position"), all = TRUE
-  )
+  # Fig. 2a overlap is counted per alignment position.
+  par_pos <- if (nrow(parallel_sum)) {
+    aggregate(candidate_parallel_signal ~ gene + position, parallel_sum, any)
+  } else {
+    data.frame(gene = character(), position = character(), candidate_parallel_signal = logical())
+  }
+  br_pos <- if (is.null(branch_sum) || !nrow(branch_sum)) {
+    data.frame(gene = character(), position = character(), branch_site_signal = logical())
+  } else {
+    b <- branch_sum[, c("gene", "position", "branch_site_signal")]
+    b$position <- as.character(b$position)
+    b$branch_site_signal <- b$branch_site_signal %in% TRUE
+    aggregate(branch_site_signal ~ gene + position, b, any)
+  }
+  overlap <- merge(par_pos, br_pos, by = c("gene", "position"), all = TRUE)
   overlap$candidate_parallel_signal[is.na(overlap$candidate_parallel_signal)] <- FALSE
   overlap$branch_site_signal[is.na(overlap$branch_site_signal)] <- FALSE
   overlap$both_filters <- overlap$candidate_parallel_signal & overlap$branch_site_signal
