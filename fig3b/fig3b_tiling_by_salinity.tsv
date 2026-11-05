@@ -1,0 +1,10 @@
+og	family	salinity	n_species	L1_sum	L1_n_species_ge2	L3_sum	L3_n_species_ge2	L3_full_sum	L3_full_n_species_ge2	min_copies_thr20_sum	min_copies_thr20_n_species_ge2	min_copies_thr50_sum	min_copies_thr50_n_species_ge2	species_min_copies_thr20_ge2
+OG0003585	Reelin-like (RELN)	FRESHWATER	8	19	5	16	4	5	0	9	1	9	1	Dpo
+OG0003585	Reelin-like (RELN)	BRACKISH	11	22	6	13	2	11	0	12	1	12	1	Cgi
+OG0003585	Reelin-like (RELN)	MARINE	23	47	12	33	7	21	0	24	1	24	1	Mye
+OG0004390	Delphilin-like (GRID2IP)	FRESHWATER	8	17	4	16	4	7	1	9	1	8	0	Lfo
+OG0004390	Delphilin-like (GRID2IP)	BRACKISH	11	26	5	13	2	11	0	11	0	11	0	
+OG0004390	Delphilin-like (GRID2IP)	MARINE	23	34	8	27	3	19	0	24	1	23	0	Mga
+OG0005024	PMS2	FRESHWATER	8	10	2	10	2	6	0	8	0	8	0	
+OG0005024	PMS2	BRACKISH	11	21	5	11	0	11	0	11	0	11	0	
+OG0005024	PMS2	MARINE	23	40	7	27	3	22	0	23	0	23	0	

@@ -1,0 +1,245 @@
+{
+ "ATG7": {
+  "og": "OG0005680",
+  "prefix": "~/###qutongjinhua_0710cxcf/ortho_clean/orthofinder_output/Results_Dec31/Ancestral_Results_Final_Species/OG0005680_anc.raxml",
+  "ntaxa": 43,
+  "ncol": 709,
+  "root_children": [
+   "Lgi",
+   "N2",
+   "N3"
+  ],
+  "stems": {
+   "Unionida": [
+    "N3",
+    "N6",
+    true
+   ],
+   "Dreissenidae": [
+    "N29",
+    "N35",
+    true
+   ],
+   "Corbicula": [
+    "N31",
+    "Cfl",
+    true
+   ],
+   "Limnoperna": [
+    "N8",
+    "Lfo",
+    true
+   ]
+  },
+  "best_system": "Apu ungapped",
+  "top_systems": [
+   [
+    "Apu ungapped",
+    [
+     1,
+     7
+    ]
+   ],
+   [
+    "Mar ungapped",
+    [
+     2,
+     4
+    ]
+   ],
+   [
+    "Mca ungapped",
+    [
+     2,
+     4
+    ]
+   ],
+   [
+    "Lfo ungapped",
+    [
+     2,
+     3
+    ]
+   ]
+  ],
+  "nsites": 18,
+  "anyhit_per_site": [
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   2,
+   1,
+   0,
+   1,
+   0,
+   5,
+   2,
+   0,
+   1,
+   1
+  ],
+  "shared_rows": 23,
+  "shared_pp08": 12,
+  "shared_absent_comp": 5
+ },
+ "ATG18": {
+  "og": "OG0004469",
+  "prefix": "~/R1_revision_20261024/fig2f_asr/OG0004469_anc.raxml",
+  "ntaxa": 40,
+  "ncol": 516,
+  "root_children": [
+   "Lgi",
+   "N2",
+   "N3"
+  ],
+  "stems": {
+   "Unionida": [
+    "N3",
+    "N6",
+    true
+   ],
+   "Dreissenidae": [
+    "N29",
+    "N35",
+    true
+   ],
+   "Corbicula": [
+    "N31",
+    "Cfl",
+    true
+   ],
+   "Limnoperna": [
+    "N8",
+    "Lfo",
+    true
+   ]
+  },
+  "best_system": "alignment column",
+  "top_systems": [
+   [
+    "alignment column",
+    [
+     1,
+     3
+    ]
+   ],
+   [
+    "Air ungapped",
+    [
+     1,
+     3
+    ]
+   ],
+   [
+    "Aja ungapped",
+    [
+     1,
+     3
+    ]
+   ],
+   [
+    "Ama ungapped",
+    [
+     1,
+     3
+    ]
+   ]
+  ],
+  "nsites": 9,
+  "anyhit_per_site": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   2
+  ],
+  "shared_rows": 5,
+  "shared_pp08": 4,
+  "shared_absent_comp": 3
+ },
+ "CNX": {
+  "og": "OG0004287",
+  "prefix": "~/###qutongjinhua_0710cxcf/ortho_clean/orthofinder_output/Results_Dec31/Ancestral_Results_Final_Species/OG0004287_anc.raxml",
+  "ntaxa": 43,
+  "ncol": 623,
+  "root_children": [
+   "Lgi",
+   "N2",
+   "N3"
+  ],
+  "stems": {
+   "Unionida": [
+    "N3",
+    "N6",
+    true
+   ],
+   "Dreissenidae": [
+    "N29",
+    "N35",
+    true
+   ],
+   "Corbicula": [
+    "N31",
+    "Cfl",
+    true
+   ],
+   "Limnoperna": [
+    "N8",
+    "Lfo",
+    true
+   ]
+  },
+  "best_system": "Mve ungapped",
+  "top_systems": [
+   [
+    "Mve ungapped",
+    [
+     1,
+     2
+    ]
+   ],
+   [
+    "Mye ungapped",
+    [
+     1,
+     2
+    ]
+   ],
+   [
+    "Pim ungapped",
+    [
+     1,
+     2
+    ]
+   ],
+   [
+    "Pst ungapped",
+    [
+     1,
+     2
+    ]
+   ]
+  ],
+  "nsites": 6,
+  "anyhit_per_site": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "shared_rows": 19,
+  "shared_pp08": 12,
+  "shared_absent_comp": 3
+ }
+}

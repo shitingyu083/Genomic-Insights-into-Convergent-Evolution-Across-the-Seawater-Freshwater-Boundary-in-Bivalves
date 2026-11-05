@@ -1,0 +1,23 @@
+map_id	name	fig2c_parallel	fig2c_positive	p67_recurrent	p67_branch_site	p85	majority_k_of_n	majority_K_of_M	majority_p	majority_q	majority_ogs	any_k_of_n	any_K_of_M	any_p	any_q	any_ogs
+map04020	Calcium signaling pathway	1	0	1	0	1	1/14	1/35	not tested (K<2)	-	OG0016620:CACNA1G*	2/14	2/35	0.1529	1	OG0016620:CACNA1G*,OG0018304:tor*
+map04024	cAMP signaling pathway	1	0	1	0	1	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3
+map04152	AMPK signaling pathway	1	0	1	0	1	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3
+map04151	PI3K-Akt signaling pathway	1	1	1	0	1	1/14	3/35	0.7968	1	OG0015612:PIK3R3,OG0017611:MEGF6,OG0018304:tor*	1/14	3/35	0.7968	1	OG0015612:PIK3R3,OG0017611:MEGF6,OG0018304:tor*
+map04141	Protein processing in endoplasmic reticulum	1	1	1	1	1	0/14	0/35	not tested (K<2)	-	-	0/14	0/35	not tested (K<2)	-	-
+map04140	Autophagy - animal	1	1	1	1	1	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3	1/14	2/35	0.6471	1	OG0015612:PIK3R3,OG0017125:NPAS3*
+map04138	Autophagy - yeast	1	1	1	1	1	0/14	0/35	not tested (K<2)	-	-	0/14	0/35	not tested (K<2)	-	-
+map04022	cGMP-PKG signaling pathway	1	0	0	0	0	0/14	0/35	not tested (K<2)	-	-	0/14	0/35	not tested (K<2)	-	-
+map04015	Rap1 signaling pathway	1	0	0	0	0	1/14	2/35	0.6471	1	OG0015612:PIK3R3,OG0018304:tor*	1/14	2/35	0.6471	1	OG0015612:PIK3R3,OG0018304:tor*
+map04071	Sphingolipid signaling pathway	1	0	0	0	0	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3
+map00330	Arginine and proline metabolism	1	0	0	0	0	1/14	3/35	0.7968	1	OG0012798:GRX1*,OG0017619:AOC3,OG0018393:CBP1	1/14	3/35	0.7968	1	OG0012798:GRX1*,OG0017619:AOC3,OG0018393:CBP1
+map00250	Alanine, aspartate and glutamate metabolism	1	1	0	0	0	0/14	0/35	not tested (K<2)	-	-	0/14	0/35	not tested (K<2)	-	-
+map00010	Glycolysis / Gluconeogenesis	1	0	0	0	0	1/14	1/35	not tested (K<2)	-	OG0012798:GRX1*	1/14	1/35	not tested (K<2)	-	OG0012798:GRX1*
+map00190	Oxidative phosphorylation	1	1	0	1	1	0/14	3/35	1	1	OG0012638:NDUFB4|SPINK1,OG0016635:ATP5I|Atp5i,OG0017647:COX17	0/14	3/35	1	1	OG0012638:NDUFB4|SPINK1,OG0016635:ATP5I|Atp5i,OG0017647:COX17
+map04210	Apoptosis	0	1	0	1	1	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3
+map04066	HIF-1 signaling pathway	0	1	0	1	0	0/14	1/35	not tested (K<2)	-	OG0015612:PIK3R3	2/14	3/35	0.3476	1	OG0015612:PIK3R3,OG0017125:NPAS3*,OG0018304:tor*
+map04010	MAPK signaling pathway	0	1	0	1	0	2/14	2/35	0.1529	1	OG0016620:CACNA1G*,OG0018304:tor*	2/14	2/35	0.1529	1	OG0016620:CACNA1G*,OG0018304:tor*
+map00590	Arachidonic acid metabolism	0	1	0	0	0	0/14	0/35	not tested (K<2)	-	-	0/14	0/35	not tested (K<2)	-	-
+map00071	Fatty acid degradation	0	1	0	0	0	1/14	1/35	not tested (K<2)	-	OG0012798:GRX1*	1/14	1/35	not tested (K<2)	-	OG0012798:GRX1*
+map02010	ABC transporters	0	1	0	1	1	0/14	0/35	not tested (K<2)	-	-	0/14	0/35	not tested (K<2)	-	-
+map00770	Pantothenate and CoA biosynthesis	0	1	0	1	0	0/14	1/35	not tested (K<2)	-	OG0015302:HSD17B14	0/14	1/35	not tested (K<2)	-	OG0015302:HSD17B14
+map00480	Glutathione metabolism	0	1	0	0	0	0/14	0/35	not tested (K<2)	-	-	0/14	0/35	not tested (K<2)	-	-

@@ -1,0 +1,19 @@
+tested HOGs 1941 | all-4-unit subset 1294
+PSG q<0.05 87 | nominal p<0.05 141
+PCG main (>=3 units, pp>=0.8, comparator-absent) 209 | sites FW 238 | marine 4-branch control mean 216.8 | FW/control 1.10
+PCG sensitivity >=2 units: any 1882 | pp>=0.8+absent 1592 | events 22272 parallel 19143 convergent 3129
+CAFE families 16019 | expanded >=1 unit 986 | >=2 units 231
+universe HOGs whose OG expanded: >=1 unit 32 | >=2 units 3
+gene Venn main {'A_only': 76, 'B_only': 195, 'C_only': 27, 'AB': 10, 'AC': 1, 'BC': 4, 'ABC': 0}
+gene Venn nominalPSG {'A_only': 118, 'B_only': 185, 'C_only': 25, 'AB': 20, 'AC': 3, 'BC': 4, 'ABC': 0}
+gene Venn strictEXP2 {'A_only': 77, 'B_only': 198, 'C_only': 2, 'AB': 10, 'AC': 0, 'BC': 1, 'ABC': 0}
+gene Venn PCG2units {'A_only': 22, 'B_only': 1500, 'C_only': 4, 'AB': 64, 'AC': 0, 'BC': 27, 'ABC': 1}
+gene Venn all4_main {'A_only': 57, 'B_only': 159, 'C_only': 19, 'AB': 10, 'AC': 1, 'BC': 2, 'ABC': 0}
+PSG∩PCG: HOG0010827(NAPEPLD);HOG0015365(-);HOG0015941(TUFM);HOG0019850(DDX58);HOG0021202(MAN1B1);HOG0021787(PPM1K);HOG0023506(C1orf198);HOG0024017(UROD);HOG0025218(TMEM237);HOG0025840(PROP1)
+PSG∩EXP: HOG0010605(proca1)
+PCG∩EXP (n=4) first 30: HOG0008260(KCNT2);HOG0008732(AOC1);HOG0009166(ALDH2);HOG0009197(DCAF5)
+pathway Venn represented {'A_only': 2, 'B_only': 15, 'C_only': 126, 'AB': 3, 'AC': 54, 'BC': 79, 'ABC': 50}
+pathway Venn enriched q<0.05 {'A_only': 0, 'B_only': 0, 'C_only': 16, 'AB': 0, 'AC': 0, 'BC': 0, 'ABC': 0}
+pathway Venn enriched p<0.05 {'A_only': 3, 'B_only': 9, 'C_only': 56, 'AB': 0, 'AC': 1, 'BC': 2, 'ABC': 0}
+pathways shared by all three (represented): map00190 Oxidative phosphorylation; map00230 Purine metabolism; map00240 Pyrimidine metabolism; map00510 N-Glycan biosynthesis; map00513 Various types of N-glycan biosynthesis; map00564 Glycerophospholipid metabolism; map00565 Ether lipid metabolism; map00860 Porphyrin metabolism; map00983 Drug metabolism - other enzymes; map01522 Endocrine resistance; map03013 Nucleocytoplasmic transport; map03015 mRNA surveillance pathway; map03040 Spliceosome; map03410 Base excision repair; map04064 NF-kappa B signaling pathway; map04120 Ubiquitin mediated proteolysis; map04138 Autophagy - yeast; map04141 Protein processing in endoplasmic reticulum; map04142 Lysosome biogenesis; map04144 Endocytosis; map04145 Phagocytosis; map04270 Vascular smooth muscle contraction; map04330 Notch signaling pathway; map04371 Apelin signaling pathway; map04622 RIG-I-like receptor signaling pathway; map04623 Cytosolic DNA-sensing pathway; map04640 Hematopoietic cell lineage; map04658 Th1 and Th2 cell differentiation; map04668 TNF signaling pathway; map04714 Thermogenesis; map04723 Retrograde endocannabinoid signaling; map04921 Oxytocin signaling pathway; map04932 Non-alcoholic fatty liver disease; map05010 Alzheimer disease; map05012 Parkinson disease; map05016 Huntington disease; map05152 Tuberculosis; map05160 Hepatitis C; map05161 Hepatitis B; map05162 Measles; map05164 Influenza A; map05165 Human papillomavirus infection; map05166 Human T-cell leukemia virus 1 infection; map05167 Kaposi sarcoma-associated herpesvirus infection; map05168 Herpes simplex virus 1 infection; map05169 Epstein-Barr virus infection; map05200 Pathways in cancer; map05206 MicroRNAs in cancer; map05224 Breast cancer; map05225 Hepatocellular carcinoma
+pathways shared by all three (enriched p<0.05): 

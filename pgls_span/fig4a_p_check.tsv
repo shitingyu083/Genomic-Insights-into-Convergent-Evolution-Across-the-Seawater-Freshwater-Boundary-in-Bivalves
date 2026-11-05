@@ -1,0 +1,23 @@
+test	n	P	near_0.014
+authors_genomic_traits Wilcoxon raw	41	6.8279642394269e-05	FALSE
+authors_genomic_traits Welch t raw	41	0.00163125296884377	FALSE
+authors_genomic_traits Welch t log10	41	7.35039024789722e-05	FALSE
+authors_genomic_traits Student t raw	41	3.58185669064654e-06	FALSE
+authors_genomic_traits Student t log10	41	2.77999105548077e-05	FALSE
+authors_genomic_traits reference_tree PGLS raw lambda=0.000	40	3.11927770708789e-06	FALSE
+authors_genomic_traits reference_tree PGLS raw lambda=0.442	40	0.00242937974073262	FALSE
+authors_genomic_traits reference_tree PGLS raw lambda=1.000	40	0.132771179106725	FALSE
+authors_genomic_traits reference_tree PGLS log10 lambda=0.000	40	2.1302816008103e-05	FALSE
+authors_genomic_traits reference_tree PGLS log10 lambda=0.442	40	0.00444989631708882	FALSE
+authors_genomic_traits reference_tree PGLS log10 lambda=1.000	40	0.14034679498355	FALSE
+TableS1_span Wilcoxon raw	42	8.37921248704304e-05	FALSE
+TableS1_span Welch t raw	42	0.00160728336474294	FALSE
+TableS1_span Welch t log10	42	6.27752039557957e-05	FALSE
+TableS1_span Student t raw	42	5.30302783915036e-06	FALSE
+TableS1_span Student t log10	42	3.45575263625756e-05	FALSE
+TableS1_span reference_tree PGLS raw lambda=0.000	42	5.30302783915031e-06	FALSE
+TableS1_span reference_tree PGLS raw lambda=0.442	42	0.00601317824127802	FALSE
+TableS1_span reference_tree PGLS raw lambda=1.000	42	0.225412603924572	FALSE
+TableS1_span reference_tree PGLS log10 lambda=0.000	42	3.45575263625761e-05	FALSE
+TableS1_span reference_tree PGLS log10 lambda=0.442	42	0.0110149631429454	FALSE
+TableS1_span reference_tree PGLS log10 lambda=1.000	42	0.254547697961549	FALSE

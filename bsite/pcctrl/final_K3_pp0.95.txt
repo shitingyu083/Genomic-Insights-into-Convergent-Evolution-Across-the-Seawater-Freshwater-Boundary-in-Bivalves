@@ -1,0 +1,1 @@
+K=3 PP=0.95 tested=1941 | FW sites 60 genes 59 | control mean sites 50.5 genes(mean>0) 179 | ratio 1.19

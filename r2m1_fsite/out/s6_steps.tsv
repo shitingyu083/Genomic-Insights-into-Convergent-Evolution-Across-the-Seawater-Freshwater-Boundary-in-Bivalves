@@ -1,0 +1,13 @@
+step	records	positions	orthogroups	status
+Input orthogroups scanned (single-copy, 36 species, 7 freshwater targets)		20251	99	original workflow
+Orthogroups with >= 3 freshwater target taxa		8822	49	original workflow
+Derived residue (vs freshwater MRCA state) shared by >= 3 freshwater taxa	1931	1849	36	original workflow (prespecified)
+Every inferred origin on a stem branch of complete freshwater unit(s)	1816	1735	36	original filter, re-applied in revision
+Derived residue absent from all comparator taxa	970	965	34	original filter, re-applied in revision
+Both filters (stated recurrent-substitution filter)	935	930	34	original filter, re-applied in revision
+Reported in the original analysis		894		original workflow (output not archived)
+Descriptor: >= 2 freshwater units carry the derived residue	617	614	36	descriptor
+Descriptor: >= 2 inferred origins	435	435	36	descriptor
+Descriptor: ancestral-state PP >= 0.80 at the freshwater MRCA	902	869	30	descriptor
+Final set: >= 2 freshwater units	80	80	26	descriptor
+Final set: >= 2 inferred origins	79	79	26	descriptor

@@ -1,0 +1,19 @@
+tested 1941 sites 20127
+units>=2 minpp>=0.00 absent=0 : sites 20127 genes 1882
+units>=2 minpp>=0.00 absent=1 : sites 13200 genes 1814
+units>=2 minpp>=0.80 absent=0 : sites 7065 genes 1693
+units>=2 minpp>=0.80 absent=1 : sites 4957 genes 1585
+units>=2 minpp>=0.95 absent=0 : sites 2855 genes 1242
+units>=2 minpp>=0.95 absent=1 : sites 2295 genes 1145
+units>=3 minpp>=0.00 absent=0 : sites 1070 genes 706
+units>=3 minpp>=0.00 absent=1 : sites 687 genes 513
+units>=3 minpp>=0.80 absent=0 : sites 316 genes 266
+units>=3 minpp>=0.80 absent=1 : sites 246 genes 216
+units>=3 minpp>=0.95 absent=0 : sites 73 genes 70
+units>=3 minpp>=0.95 absent=1 : sites 63 genes 62
+units>=4 minpp>=0.00 absent=0 : sites 111 genes 106
+units>=4 minpp>=0.00 absent=1 : sites 58 genes 56
+units>=4 minpp>=0.80 absent=0 : sites 16 genes 16
+units>=4 minpp>=0.80 absent=1 : sites 14 genes 14
+units>=4 minpp>=0.95 absent=0 : sites 4 genes 4
+units>=4 minpp>=0.95 absent=1 : sites 4 genes 4

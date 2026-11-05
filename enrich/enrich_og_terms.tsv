@@ -1,0 +1,100 @@
+og	candidate	sites_parallel	sites_convergent	sites_mixed	units_with_candidates	n_annot_members	preferred_name	name_support	description	kegg_ko_majority	kegg_map_majority	pfam_majority	n_go_majority
+OG0011933	1	5	3	0	Corbicula;Dreissenidae;Limnoperna;Unionida	42	RNF13	1/1	RING-like zinc finger	ko:K11982,ko:K15692	-	zf-RING_2	97
+OG0011968	1	10	2	0	Corbicula;Dreissenidae;Limnoperna;Unionida	41	RDH13	14/28	Oxidoreductase activity. It is involved in the biological process described with metabolic process	ko:K11161	map01100 Metabolic pathways; map04013 MAPK signaling pathway - fly; map04115 p53 signaling pathway; map04120 Ubiquitin mediated proteolysis; map04310 Wnt signaling pathway	adh_short	91
+OG0012042	1	1	0	0	Corbicula;Dreissenidae	41	GATAD1	41/41	GATA zinc finger	-	-	GATA	54
+OG0012111	1	0	1	0	Corbicula;Dreissenidae	41	EMC3	14/14	ER membrane protein complex subunit	-	-	DUF106	95
+OG0012399	1	4	2	0	Dreissenidae;Limnoperna;Unionida	38	ZDHHC22	6/10	Zinc finger DHHC-type containing 22	ko:K18932	-	DHHC	52
+OG0012432	1	8	1	0	Corbicula;Dreissenidae;Unionida	39	VKORC1L1	34/39	Vitamin K epoxide reductase complex, subunit 1-like	ko:K05357	map00130 Ubiquinone and other terpenoid-quinone biosynthesis; map01110 Biosynthesis of secondary metabolites	VKOR	60
+OG0012555	1	4	1	0	Corbicula;Limnoperna;Unionida	35	PRDM13	10/11	Zinc finger, C2H2 type	ko:K09219	-	zf-C2H2	95
+OG0012638	0	0	0	0	-	32	NDUFB4|SPINK1	1/2	NADH-ubiquinone oxidoreductase B15 subunit (NDUFB4)	ko:K03960	map00190 Oxidative phosphorylation; map01100 Metabolic pathways; map04714 Thermogenesis; map04723 Retrograde endocannabinoid signaling; map04932 Non-alcoholic fatty liver disease; map05010 Alzheimer disease; map05012 Parkinson disease; map05016 Huntington disease	NDUF_B4	89
+OG0012747	1	8	4	0	Corbicula;Dreissenidae;Limnoperna;Unionida	35	Hil	15/19	Zinc-binding domain present in Lin-11, Isl-1, Mec-3.	ko:K19947	map05146 Amoebiasis	LIM	23
+OG0012798	1	1	1	0	Corbicula;Unionida	36	GRX1	5/10	protein disulfide oxidoreductase activity	ko:K03676	map00010 Glycolysis / Gluconeogenesis; map00053 Ascorbate and aldarate metabolism; map00071 Fatty acid degradation; map00280 Valine, leucine and isoleucine degradation; map00310 Lysine degradation; map00330 Arginine and proline metabolism; map00340 Histidine metabolism; map00380 Tryptophan metabolism; map00410 beta-Alanine metabolism; map00561 Glycerolipid metabolism; map00620 Pyruvate metabolism; map00625 Chloroalkane and chloroalkene degradation; map00903 Limonene degradation; map00981 Insect hormone biosynthesis; map01100 Metabolic pathways; map01110 Biosynthesis of secondary metabolites; map01120 Microbial metabolism in diverse environments; map01130 	Glutaredoxin	85
+OG0012879	1	0	1	0	Dreissenidae;Unionida	35	C7orf55	9/12	Chromosome 7 open reading frame 55|mitochondrial proton-transporting ATP synthase complex assembly	ko:K10878	map04113 Meiosis - yeast	Complex1_LYR_2	42
+OG0013094	1	1	0	0	Dreissenidae;Unionida	30	-	0/0	-	-	-	-	0
+OG0013234	0	0	0	0	-	30	mRpL53	17/29	ribosomal protein, L53	ko:K17434	-	MRP_L53	79
+OG0013650	1	4	3	0	Corbicula;Limnoperna;Unionida	29	ZNF217	4/11	Zinc finger protein	ko:K09228	map00310 Lysine degradation	zf-C2H2	55
+OG0014055	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0014085	0	0	0	0	-	26	ANKRD61	7/11	spectrin binding	-	map04668 TNF signaling pathway	Ank,Ank_2,Ank_4	70
+OG0014247	1	2	0	0	Corbicula;Dreissenidae;Unionida	25	-	0/0	RNA polymerase II transcription mediator complex subunit 9	ko:K15149	-	Med9	103
+OG0014412	1	2	0	0	Corbicula;Dreissenidae;Unionida	23	KIN3	5/10	protein serine/threonine kinase activity	-	map04621 NOD-like receptor signaling pathway	Pkinase	186
+OG0014807	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0014811	0	0	0	0	-	17	ATF3	16/17	positive regulation of TRAIL-activated apoptotic signaling pathway	ko:K09032,ko:K21406	map05166 Human T-cell leukemia virus 1 infection	bZIP_1	267
+OG0014821	1	2	1	0	Limnoperna;Unionida	0	-	0/0	-	-	-	-	0
+OG0015265	0	0	0	0	-	1	HDAC2	1/1	Belongs to the histone deacetylase family. HD Type 1 subfamily	ko:K06067	map04110 Cell cycle; map04213 Longevity regulating pathway - multiple species; map04330 Notch signaling pathway; map04919 Thyroid hormone signaling pathway; map05016 Huntington disease; map05034 Alcoholism; map05165 Human papillomavirus infection; map05169 Epstein-Barr virus infection; map05200 Pathways in cancer; map05202 Transcriptional misregulation in cancer; map05203 Viral carcinogenesis; map05220 Chronic myeloid leukemia	Hist_deacetyl	683
+OG0015302	0	0	0	0	-	1	HSD17B14	1/1	Hydroxysteroid (17-beta) dehydrogenase 14	ko:K00826	map00270 Cysteine and methionine metabolism; map00280 Valine, leucine and isoleucine degradation; map00290 Valine, leucine and isoleucine biosynthesis; map00770 Pantothenate and CoA biosynthesis; map01100 Metabolic pathways; map01110 Biosynthesis of secondary metabolites; map01130 ; map01210 2-Oxocarboxylic acid metabolism; map01230 Biosynthesis of amino acids	adh_short,adh_short_C2	49
+OG0015312	1	0	1	0	Limnoperna;Unionida	0	-	0/0	-	-	-	-	0
+OG0015563	1	2	0	0	Dreissenidae;Unionida	18	-	0/0	nucleic acid binding	ko:K09228	-	zf-C2H2,zf-C2H2_6,zf-H2C2_2	112
+OG0015582	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0015612	0	0	0	0	-	13	PIK3R3	5/12	Phosphatidylinositol 3-kinase	ko:K02649	map01521 EGFR tyrosine kinase inhibitor resistance; map01522 Endocrine resistance; map01524 Platinum drug resistance; map04012 ErbB signaling pathway; map04014 Ras signaling pathway; map04015 Rap1 signaling pathway; map04024 cAMP signaling pathway; map04062 Chemokine signaling pathway; map04066 HIF-1 signaling pathway; map04068 FoxO signaling pathway; map04070 Phosphatidylinositol signaling system; map04071 Sphingolipid signaling pathway; map04072 Phospholipase D signaling pathway; map04140 Autophagy - animal; map04150 mTOR signaling pathway; map04151 PI3K-Akt signaling pathway; map04152 AMPK signaling pathway; map04210 Apoptosis; map04211 Longevity regulating pathway; map04213 Longevity regulating pathway - multiple species; map04218 Cellular senescence; map04360 Axon guidance; map04370 VEGF signaling pathway; map04380 Osteoclast differentiation; map04510 Focal adhesion; map04550 Signaling pathways regulating pluripotency of stem cells; map04611 Platelet activation; map04620 Toll-like receptor signaling pathway; map04630 JAK-STAT signaling pathway; map04650 Natural killer cell mediated cytotoxicity; map04660 T cell receptor signaling pathway; map04662 B cell receptor signaling pathway; map04664 Fc epsilon RI signaling pathway; map04666 Fc gamma R-mediated phagosome formation; map04668 TNF signaling pathway; map04670 Leukocyte transendothelial migration; map04722 Neurotrophin signaling pathway; map04725 Cholinergic synapse; map04750 Inflammatory mediator regulation of TRP channels; map04810 Regulation of actin cytoskeleton; map04910 Insulin signaling pathway; map04914 Progesterone-mediated oocyte maturation; map04915 Estrogen signaling pathway; map04917 Prolactin signaling pathway; map04919 Thyroid hormone signaling pathway; map04923 Regulation of lipolysis in adipocytes; map04926 Relaxin signaling pathway; map04930 Type II diabetes mellitus; map04931 Insulin resistance; map04932 Non-alcoholic fatty liver disease; map04933 AGE-RAGE signaling pathway in diabetic complications; map04960 Aldosterone-regulated sodium reabsorption; map04973 Carbohydrate digestion and absorption; map05100 Bacterial invasion of epithelial cells; map05142 Chagas disease; map05146 Amoebiasis; map05160 Hepatitis C; map05161 Hepatitis B; map05162 Measles; map05164 Influenza A; map05165 Human papillomavirus infection; map05166 Human T-cell leukemia virus 1 infection; map05167 Kaposi sarcoma-associated herpesvirus infection; map05169 Epstein-Barr virus infection; map05200 Pathways in cancer; map05203 Viral carcinogenesis; map05205 Proteoglycans in cancer; map05210 Colorectal cancer; map05211 Renal cell carcinoma; map05212 Pancreatic cancer; map05213 Endometrial cancer; map05214 Glioma; map05215 Prostate cancer; map05218 Melanoma; map05220 Chronic myeloid leukemia; map05221 Acute myeloid leukemia; map05222 Small cell lung cancer; map05223 Non-small cell lung cancer; map05224 Breast cancer; map05225 Hepatocellular carcinoma; map05226 Gastric cancer; map05230 Central carbon metabolism in cancer; map05231 Choline metabolism in cancer; map05418 Fluid shear stress and atherosclerosis	PI3K_P85_iSH2,RhoGAP,SH2	624
+OG0015613	1	3	0	0	Corbicula;Dreissenidae;Unionida	12	cenpw	5/7	Centromere protein	-	-	CENP-W	69
+OG0015670	1	4	4	1	Corbicula;Dreissenidae;Limnoperna;Unionida	0	-	0/0	-	-	-	-	0
+OG0015862	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0015866	1	1	0	0	Dreissenidae;Unionida	0	-	0/0	-	-	-	-	0
+OG0015888	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0015903	1	1	0	0	Dreissenidae;Unionida	15	C18orf32	7/7	obsolete signal transducer activity	-	-	DUF4512	0
+OG0015908	0	0	0	0	-	17	recQ3	5/6	Functions in blocking illegitimate recombination, enhancing topoisomerase activity, initiating SOS signaling and clearing blocked replication forks	ko:K03654	map03018 RNA degradation	DEAD,HRDC,HTH_40,Helicase_C,RQC,RecQ_Zn_bind	195
+OG0016210	0	0	0	0	-	17	ANKRD28|NAS6	2/4	protein ubiquitination	-	map04310 Wnt signaling pathway; map04624 Toll and Imd signaling pathway; map05205 Proteoglycans in cancer	Ank,Ank_2,Ank_3,Ank_4,Ank_5	26
+OG0016218	0	0	0	0	-	17	HTD2	15/15	MaoC like domain	ko:K14529,ko:K17865	map00630 Glyoxylate and dicarboxylate metabolism; map00650 Butanoate metabolism; map01120 Microbial metabolism in diverse environments; map01200 Carbon metabolism; map03013 Nucleocytoplasmic transport	MaoC_dehydratas	97
+OG0016224	0	0	0	0	-	17	MANBAL	17/17	Mannosidase, beta A, lysosomal-like	-	-	UPF0239	0
+OG0016236	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0016239	0	0	0	0	-	17	RASEF	9/14	RAS and EF-hand	ko:K17199	-	EF-hand_5,EF-hand_7,EF-hand_8,Ras	43
+OG0016251	0	0	0	0	-	12	COA3	10/11	Coiled-coil domain-containing protein 56	ko:K18175	map04714 Thermogenesis	Coiled-coil_56	82
+OG0016256	1	2	0	0	Corbicula;Unionida	12	AUTS2	6/6	Autism susceptibility gene 2 protein|positive regulation of histone H4-K16 acetylation	-	-	Auts2	222
+OG0016264	1	5	0	0	Corbicula;Unionida	0	-	0/0	-	-	-	-	0
+OG0016317	1	2	0	0	Dreissenidae;Limnoperna;Unionida	0	-	0/0	-	-	-	-	0
+OG0016590	0	0	0	0	-	11	ANKRD26	1/1	ankyrin repeat	ko:K17299	-	Ank,Ank_2,Ank_4,Ank_5,CCDC144C,DUF3496	90
+OG0016610	0	0	0	0	-	15	SMIM4	4/4	Uncharacterised protein family UPF0640	-	-	UPF0640	0
+OG0016620	1	1	0	0	Corbicula;Unionida	8	CACNA1G	3/3	low voltage-gated calcium channel activity	ko:K04854,ko:K04855,ko:K04856	map04010 MAPK signaling pathway; map04020 Calcium signaling pathway; map04713 Circadian entrainment; map04925 Aldosterone synthesis and secretion; map04927 Cortisol synthesis and secretion; map04930 Type II diabetes mellitus; map04934 Cushing syndrome	Ion_trans	320
+OG0016635	0	0	0	0	-	2	ATP5I|Atp5i	1/2	ATP synthase E chain|ATP synthase, H transporting, mitochondrial F0 complex, subunit e, duplicate a	ko:K02129	map00190 Oxidative phosphorylation; map01100 Metabolic pathways; map04714 Thermogenesis	ATP-synt_E	132
+OG0016646	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017050	0	0	0	0	-	1	-	0/0	-	ko:K03096	map04310 Wnt signaling pathway; map05200 Pathways in cancer; map05224 Breast cancer; map05225 Hepatocellular carcinoma; map05226 Gastric cancer	GSK-3_bind	0
+OG0017055	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017062	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017063	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017082	0	0	0	0	-	14	FOCAD	13/14	Focadhesin	ko:K01669	-	DUF3730,Focadhesin	7
+OG0017093	0	0	0	0	-	5	myo16	4/5	protein ubiquitination	ko:K12828,ko:K17481	map03040 Spliceosome	Ank_2,CCDC144C,DUF3496,Myosin_head,NB-ARC,NYAP_C,NYAP_N,PGG	12
+OG0017111	0	0	0	0	-	15	-	0/0	Myb/SANT-like DNA-binding domain	ko:K22255	-	Myb_DNA-bind_5	225
+OG0017119	1	3	0	0	Corbicula;Limnoperna;Unionida	0	-	0/0	-	-	-	-	0
+OG0017123	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017125	1	1	0	0	Dreissenidae;Limnoperna	15	NPAS3	6/15	DNA-binding transcription factor activity, RNA polymerase II-specific|Neuronal PAS domain-containing protein 3|Neuronal pas domain protein|activity. It is involved in the biological process described with regulation of transcription, DNA-templated	ko:K09098	map04659 Th17 cell differentiation	HLH,PAS,PAS_3	155
+OG0017126	0	0	0	0	-	15	PTK7	14/14	kinase 7|protein tyrosine kinase	ko:K05127	-	I-set,Ig_3,Pkinase_Tyr	291
+OG0017557	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017571	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017572	1	1	0	0	Corbicula;Limnoperna	0	-	0/0	-	-	-	-	0
+OG0017578	1	2	0	0	Dreissenidae;Unionida	14	-	0/0	ADP-ribosylglycohydrolase	ko:K20168	map04137 Mitophagy - animal	ADP_ribosyl_GH	0
+OG0017581	0	0	0	0	-	13	-	0/0	Lytic polysaccharide mono-oxygenase, cellulose-degrading	-	-	LPMO_10	0
+OG0017584	1	3	0	0	Corbicula;Dreissenidae	8	ZNF646	3/6	Zinc finger protein 646	ko:K09228	map04110 Cell cycle; map05200 Pathways in cancer; map05202 Transcriptional misregulation in cancer; map05222 Small cell lung cancer	zf-C2H2,zf-met	24
+OG0017593	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017594	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017611	0	0	0	0	-	11	MEGF6	3/10	Multiple epidermal growth factor-like domains protein	ko:K05636,ko:K06243	map04151 PI3K-Akt signaling pathway; map04510 Focal adhesion; map04512 ECM-receptor interaction; map05145 Toxoplasmosis; map05146 Amoebiasis; map05165 Human papillomavirus infection; map05200 Pathways in cancer; map05222 Small cell lung cancer	Laminin_EGF,hEGF	52
+OG0017619	0	0	0	0	-	14	AOC3	8/13	amine oxidase	ko:K00276,ko:K11182	map00260 Glycine, serine and threonine metabolism; map00330 Arginine and proline metabolism; map00340 Histidine metabolism; map00350 Tyrosine metabolism; map00360 Phenylalanine metabolism; map00380 Tryptophan metabolism; map00410 beta-Alanine metabolism; map00950 Isoquinoline alkaloid biosynthesis; map00960 Tropane, piperidine and pyridine alkaloid biosynthesis; map01100 Metabolic pathways; map01110 Biosynthesis of secondary metabolites	Cu_amine_oxid,Cu_amine_oxidN2,Cu_amine_oxidN3,DUF1965	160
+OG0017636	0	0	0	0	-	8	ZNF560	2/2	Zinc finger, C2H2 type	ko:K09228	-	zf-AD,zf-C2H2,zf-C2H2_4,zf-C2H2_6	35
+OG0017644	1	1	0	0	Corbicula;Dreissenidae	0	-	0/0	-	-	-	-	0
+OG0017647	0	0	0	0	-	14	COX17	11/11	COX17 cytochrome c oxidase assembly homolog (S. cerevisiae)	ko:K02260	map00190 Oxidative phosphorylation; map01100 Metabolic pathways; map04714 Thermogenesis	COX17	102
+OG0017649	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017651	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017652	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017654	0	0	0	0	-	14	-	0/0	FYVE-type zinc finger	-	-	FYVE_2	0
+OG0017657	0	0	0	0	-	1	MRC2	1/1	Mannose receptor	ko:K06560	map04145 Phagocytosis; map05152 Tuberculosis	Lectin_C,fn2	35
+OG0017693	1	1	0	0	Corbicula;Dreissenidae	0	-	0/0	-	-	-	-	0
+OG0017742	1	8	1	0	Corbicula;Dreissenidae	13	DCHS2	4/8	calcium ion binding. It is involved in the biological process described with homophilic cell adhesion via plasma membrane adhesion molecules	-	map04391 Hippo signaling pathway - fly; map04392 Hippo signaling pathway - multiple species	Cadherin	169
+OG0017807	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0017884	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0018153	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0018166	0	0	0	0	-	13	LHX3	11/13	medial motor column neuron differentiation	ko:K09374	map04550 Signaling pathways regulating pluripotency of stem cells	Homeobox,LIM	208
+OG0018169	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0018172	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0018176	0	0	0	0	-	1	WFDC2	1/1	Four-disulfide core domains	-	-	WAP	64
+OG0018177	0	0	0	0	-	12	SEPN1	12/12	skeletal muscle fiber development	ko:K19874	-	-	163
+OG0018186	0	0	0	0	-	8	LY6E	1/1	calcium ion binding	ko:K02599,ko:K06052,ko:K10737	map01522 Endocrine resistance; map04320 Dorso-ventral axis formation; map04330 Notch signaling pathway; map04371 Apelin signaling pathway; map04658 Th1 and Th2 cell differentiation; map04668 TNF signaling pathway; map04919 Thyroid hormone signaling pathway; map05020 Prion disease; map05165 Human papillomavirus infection; map05200 Pathways in cancer; map05206 MicroRNAs in cancer; map05224 Breast cancer	EGF,EGF_CA,FXa_inhibition,Ldl_recept_a,Ldl_recept_b,VWA,Vitellogenin_N,cEGF	14
+OG0018200	0	0	0	0	-	1	-	0/0	-	-	-	-	0
+OG0018205	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0018208	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0018213	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0018215	0	0	0	0	-	0	-	0/0	-	-	-	-	0
+OG0018255	1	2	0	0	Corbicula;Dreissenidae	0	-	0/0	-	-	-	-	0
+OG0018270	1	2	0	0	Corbicula;Dreissenidae;Unionida	1	LIG1	1/1	DNA ligase	ko:K10747,ko:K16679	map03030 DNA replication; map03410 Base excision repair; map03420 Nucleotide excision repair; map03430 Mismatch repair; map04013 MAPK signaling pathway - fly; map04214 Apoptosis - fly; map04215 Apoptosis - multiple species; map04391 Hippo signaling pathway - fly	DNA_ligase_A_C,DNA_ligase_A_M,DNA_ligase_A_N	96
+OG0018304	1	1	1	0	Corbicula;Unionida	8	tor	2/3	transmembrane receptor protein tyrosine kinase activity	ko:K04362,ko:K05126,ko:K12378	map04010 MAPK signaling pathway; map04013 MAPK signaling pathway - fly; map04014 Ras signaling pathway; map04015 Rap1 signaling pathway; map04151 PI3K-Akt signaling pathway; map04520 Adherens junction; map04550 Signaling pathways regulating pluripotency of stem cells; map04714 Thermogenesis; map04810 Regulation of actin cytoskeleton; map05200 Pathways in cancer; map05205 Proteoglycans in cancer; map05215 Prostate cancer; map05216 Thyroid cancer; map05218 Melanoma; map05224 Breast cancer; map05230 Central carbon metabolism in cancer	Pkinase_Tyr	166
+OG0018319	1	1	0	0	Corbicula;Dreissenidae	1	CAPRIN2	1/1	Cytoplasmic activation/proliferation-associated protein-1 C term	ko:K18743,ko:K18744	-	C1q,Caprin-1_C	159
+OG0018393	0	0	0	0	-	13	CBP1	1/1	Flavin containing amine oxidoreductase	ko:K12259	map00330 Arginine and proline metabolism; map00410 beta-Alanine metabolism	Amino_oxidase	76
+OG0018395	0	0	0	0	-	11	TMEM244	10/11	Integral membrane protein S linking to the trans Golgi network	ko:K12195	map04144 Endocytosis; map04217 Necroptosis	SYS1	177

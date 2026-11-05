@@ -1,0 +1,44 @@
+records 1931 positions 1849
+n_orig distribution [(1, 1496), (2, 413), (3, 21), (4, 1)]
+orig_units distribution [(1, 1496), (2, 413), (3, 21), (4, 1)]
+parallel(all origins same anc) vs convergent Counter({True: 1874, False: 57})
+orig>=2                                  records   435 positions   435
+orig_units>=2                            records   435 positions   435
+units>=2                                 records   617 positions   614
+pp>=0.8                                  records   902 positions   869
+pp>=0.9                                  records   698 positions   672
+pp>=0.95                                 records   577 positions   553
+pp>=0.5                                  records  1431 positions  1374
+origpp>=0.8                              records   847 positions   817
+origpp>=0.9                              records   639 positions   614
+no_marine                                records   970 positions   965
+marine<=1                                records  1234 positions  1220
+marine<=2                                records  1374 positions  1347
+marine<=3                                records  1483 positions  1442
+gap<=0.3                                 records  1918 positions  1836
+gap<=0.5                                 records  1926 positions  1844
+gap==0                                   records  1203 positions  1151
+fwmiss<=2&nonfw<=3                       records  1887 positions  1807
+tgtgap==0                                records  1569 positions  1494
+n>=4                                     records   323 positions   323
+parallel                                 records   378 positions   378
+nonsol                                   records  1931 positions  1849
+mrca_root                                records   855 positions   829
+near-894 combos:
+(('pp>=0.8',), 902, 869)
+(('pp>=0.8', 'pp>=0.5'), 902, 869)
+(('pp>=0.8', 'gap<=0.3'), 901, 868)
+(('pp>=0.8', 'gap<=0.5'), 902, 869)
+(('pp>=0.8', 'nonsol'), 902, 869)
+(('marine<=3', 'gap==0'), 930, 899)
+(('pp>=0.8', 'pp>=0.5', 'gap<=0.3'), 901, 868)
+(('pp>=0.8', 'pp>=0.5', 'gap<=0.5'), 902, 869)
+(('pp>=0.8', 'pp>=0.5', 'nonsol'), 902, 869)
+(('pp>=0.8', 'gap<=0.3', 'gap<=0.5'), 901, 868)
+(('pp>=0.8', 'gap<=0.3', 'nonsol'), 901, 868)
+(('pp>=0.8', 'gap<=0.5', 'nonsol'), 902, 869)
+(('marine<=3', 'gap<=0.3', 'gap==0'), 930, 899)
+(('marine<=3', 'gap<=0.5', 'gap==0'), 930, 899)
+(('marine<=3', 'gap==0', 'fwmiss<=2&nonfw<=3'), 930, 899)
+(('marine<=3', 'gap==0', 'tgtgap==0'), 930, 899)
+(('marine<=3', 'gap==0', 'nonsol'), 930, 899)

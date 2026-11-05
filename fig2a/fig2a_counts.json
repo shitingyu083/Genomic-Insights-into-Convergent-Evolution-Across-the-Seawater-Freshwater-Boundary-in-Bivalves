@@ -1,0 +1,470 @@
+{
+ "loose3": {
+  "file": "3site-loose_convergence_results.txt",
+  "md5": "d0befacad98e76ef642991e02bf3f401",
+  "lines": 1939,
+  "records": 1931,
+  "genes": 36,
+  "og_sites": 1849,
+  "count_ne_species": 0,
+  "species_seen": [
+   "Awo",
+   "Cfl",
+   "Dpo",
+   "Dro",
+   "Lfo",
+   "Pst",
+   "Ude"
+  ],
+  "count_dist": {
+   "3": 1608,
+   "4": 188,
+   "5": 94,
+   "6": 40,
+   "7": 1
+  },
+  "records_by_n_units": {
+   "1": 1314,
+   "2": 525,
+   "3": 89,
+   "4": 3
+  },
+  "single_unit_records": {
+   "Unionida": 1314
+  },
+  "header": [
+   "开始扫描趋同位点...",
+   "目标物种关键词: ['Pst', 'Cfl', 'Dpo', 'Dro', 'Lfo', 'Awo', 'Ude']",
+   "最小趋同数量阈值: 3"
+  ],
+  "footer": [
+   "扫描完成。共找到 1931 个潜在的趋同位点。"
+  ],
+  "site_in_tokens": 8
+ },
+ "strict5": {
+  "file": "result_5species.txt",
+  "md5": "27e6ced54b12b0e7183ecf215a973eb1",
+  "lines": 146,
+  "records": 135,
+  "genes": 15,
+  "og_sites": 135,
+  "count_ne_species": 0,
+  "species_seen": [
+   "Awo",
+   "Cfl",
+   "Dpo",
+   "Dro",
+   "Lfo",
+   "Pst",
+   "Ude"
+  ],
+  "count_dist": {
+   "5": 94,
+   "6": 40,
+   "7": 1
+  },
+  "records_by_n_units": {
+   "2": 70,
+   "3": 62,
+   "4": 3
+  },
+  "single_unit_records": {},
+  "header": [
+   "正在扫描趋同位点...",
+   "输入目录: ../01_ancestral/PAML_Results",
+   "目标物种: ['Pst', 'Cfl', 'Dpo', 'Dro', 'Lfo', 'Awo', 'Ude']",
+   "筛选阈值: >= 5 个物种发生一致突变"
+  ],
+  "footer": [
+   "统计完成。",
+   "共发现 135 个趋同位点。",
+   "涉及 15 个基因家族。"
+  ],
+  "site_in_tokens": 2
+ },
+ "csv_files": 29,
+ "token_hits_csv": {
+  "Fig04_Convergence_Strength_Distribution_source_data.csv": {
+   "Site=109": 5,
+   "Site=263": 3
+  },
+  "Fig10_Site_Selection_DeltaSSLS_Distribution_source_data.csv": {
+   "Site=109": 4,
+   "Site=263": 2
+  },
+  "Fig15A_Convergence_Strength_Ridgeline_source_data.csv": {
+   "Site=109": 5,
+   "Site=263": 3
+  },
+  "Fig16B_Site_Species_Network_source_data.csv": {
+   "Site=109": 6
+  }
+ },
+ "token_hits_txt": {
+  "convergence_detailed_analysis.txt": [
+   [
+    218,
+    "OG0017693.cleaned.paml                  :   6 sites, Range:   49- 263, Mean:  159.7"
+   ]
+  ]
+ },
+ "token_scan_fsite": {
+  "root": "Fsite_method",
+  "files": 2044,
+  "xlsx_files": 4,
+  "tokens": {
+   "894": {
+    "hits": 12,
+    "files": 12,
+    "by_location": {
+     "column pos": 12
+    },
+    "non_position_hits": []
+   },
+   "785": {
+    "hits": 86,
+    "files": 34,
+    "by_location": {
+     "text line": 37,
+     "column pos": 12,
+     "column residue": 36,
+     "column x2": 1
+    },
+    "non_position_hits": [
+     [
+      "01_ancestral/run_paml_final1.log",
+      6918,
+      "reading seq# 1 Air.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6919,
+      "reading seq# 2 Aja.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6920,
+      "reading seq# 3 Apu.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6921,
+      "reading seq# 4 Awo.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6922,
+      "reading seq# 5 Cfa.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6923,
+      "reading seq# 6 Mye.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6924,
+      "reading seq# 7 Pfu.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6925,
+      "reading seq# 8 Pim.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6926,
+      "reading seq# 9 Pmag.pep                                               785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6927,
+      "reading seq#10 Pst.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6928,
+      "reading seq#11 Sbr.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6929,
+      "reading seq#12 SOL0206320.1LOCUS=CHR13_34510757_34533378_-LEN_2667     785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6930,
+      "reading seq#13 Ude.pep                                                785 sites"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      6931,
+      "reading seq#14 Yba.pep                                                785 sitesns = 14  \tls = 785"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      7130,
+      "C5 716 717 718 719 720 721 722 726 727 728 729 730 731 732 733 734 735 736 737 738 739 740 741 742 743 744 745 746 747 7"
+     ],
+     [
+      "01_ancestral/run_paml_final1.log",
+      7156,
+      "135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 "
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/input.phy",
+      1,
+      "13  785"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/lnf",
+      1,
+      "-1    785    655"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/paml_output.txt",
+      2,
+      "Model: Empirical_F,  (jones.dat) dGamma (ncatG=4) ns =  13  ls = 785"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rates",
+      795,
+      "785     1  SFS-SSNNS-A-F    1.337     3"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst",
+      811,
+      "785      1   SFS-SSNNS-A-F: S(0.273) S(0.509) N(1.000) S(0.567) S(0.999) S(1.000) S(1.000) S(0.995) F(1.000) S(1.000) S("
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst",
+      1447,
+      "785 S 0.509 -> N 1.000"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst",
+      2386,
+      "785 S 0.995 -> F 1.000"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst",
+      3011,
+      "785 S 0.567 -> A"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst",
+      3182,
+      "785 S 0.211 -> -"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst",
+      3225,
+      "785 S 0.211 -> -"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst",
+      3387,
+      "785 S 0.213 -> -"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst",
+      3394,
+      "25    785"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst",
+      4217,
+      "785  S- S- SA S- SN SF (6)"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017619.cleaned.paml/rst1",
+      1,
+      "13\t785\t655\t0.676\t0.630\t0.012\t0.004\t0.077\t0.447\t0.063\t0.076\t0.051\t0.008\t0.081\t0.023\t0.225\t0.004\t0.001\t0.236\t0.038\t0.040\t0"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017636.cleaned.paml/rates",
+      795,
+      "785     1  -RRR-RRRR--R    0.218     1"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017636.cleaned.paml/rst",
+      811,
+      "785      1   -RRR-RRRR--R: R(0.626) R(0.931) R(0.935) R(0.990) R(1.000) R(1.000) R(1.000) R(1.000) R(1.000) R(0.935) R(0"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017636.cleaned.paml/rst",
+      1421,
+      "785 R 0.626 -> -"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017636.cleaned.paml/rst",
+      4577,
+      "785 R 0.935 -> -"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017636.cleaned.paml/rst",
+      5309,
+      "785 R 0.935 -> -"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017636.cleaned.paml/rst",
+      6790,
+      "785 R 0.926 -> -"
+     ],
+     [
+      "01_ancestral/PAML_Results/OG0017636.cleaned.paml/rst",
+      7651,
+      "785  R- R- R- R- (4)"
+     ],
+     [
+      "New Folder/fresh_parallel_site_GO_enrichment.xls",
+      135,
+      "GO:0006820\tanion transport\tBP\t0.015564343\t0.267625228\t34\t785\t957\t33600\tOver\t6\tGene.101190_Dro,Gene.104173_Dro,Gene.11716"
+     ]
+    ]
+   },
+   "1003": {
+    "hits": 6,
+    "files": 6,
+    "by_location": {
+     "column pos": 6
+    },
+    "non_position_hits": []
+   }
+  }
+ },
+ "venn_functions": {
+  "030-03284.R": {
+   "md5": "01868bdc4881edb550a9fef84a87e389",
+   "lines": 4559,
+   "function": [
+    1212,
+    1312
+   ],
+   "category_names": [
+    1298
+   ],
+   "gene_stats_fallback": [
+    1230
+   ],
+   "synthetic_fallback": [
+    1238
+   ]
+  },
+  "0304-000.R": {
+   "md5": "c43131b5e35223bffe654d20a07b0587",
+   "lines": 3358,
+   "function": [
+    728,
+    770
+   ],
+   "category_names": [
+    758
+   ],
+   "gene_stats_fallback": [],
+   "synthetic_fallback": []
+  },
+  "0304-0325.R": {
+   "md5": "11251f3bab67d8e9b5216341012db299",
+   "lines": 3627,
+   "function": [
+    889,
+    931
+   ],
+   "category_names": [
+    919
+   ],
+   "gene_stats_fallback": [],
+   "synthetic_fallback": []
+  },
+  "0304-0326.R": {
+   "md5": "8ed177cf22c5d447705274f73983db98",
+   "lines": 4127,
+   "function": [
+    983,
+    1062
+   ],
+   "category_names": [
+    1048
+   ],
+   "gene_stats_fallback": [
+    1001
+   ],
+   "synthetic_fallback": [
+    1009
+   ]
+  },
+  "0304-0331.R": {
+   "md5": "9cf505e55deae609b3f3207e6d42bfbd",
+   "lines": 6070,
+   "function": [
+    2169,
+    2273
+   ],
+   "category_names": [
+    2259
+   ],
+   "gene_stats_fallback": [
+    2187
+   ],
+   "synthetic_fallback": [
+    2195
+   ]
+  },
+  "0304.R": {
+   "md5": "d010de5bc7489cd92f8c1216e7c7e5e4",
+   "lines": 7990,
+   "function": [
+    3108,
+    3212
+   ],
+   "category_names": [
+    3198
+   ],
+   "gene_stats_fallback": [
+    3126
+   ],
+   "synthetic_fallback": [
+    3134
+   ]
+  }
+ },
+ "fig13_steps": [
+  {
+   "Step": "Step 1: ancestral-state candidate sites",
+   "Count": "1931",
+   "Prev": "",
+   "Retention": "",
+   "FillValue": "0.795"
+  },
+  {
+   "Step": "Step 2: Fsite convergent substitutions",
+   "Count": "1931",
+   "Prev": "1931",
+   "Retention": "1",
+   "FillValue": "0.795"
+  },
+  {
+   "Step": "Step 3: positive-selection and parallel-evidence substitutions",
+   "Count": "691",
+   "Prev": "1931",
+   "Retention": "0.35784567581564",
+   "FillValue": "0.385"
+  },
+  {
+   "Step": "Step 4: integrated ancestral + selection + extant evidence",
+   "Count": "691",
+   "Prev": "691",
+   "Retention": "1",
+   "FillValue": "0.385"
+  },
+  {
+   "Step": "Step 5: high-confidence adaptive convergent substitutions",
+   "Count": "44",
+   "Prev": "691",
+   "Retention": "0.0636758321273517",
+   "FillValue": "0.18"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "gene_main": {
+  "A_only": 76,
+  "B_only": 195,
+  "C_only": 27,
+  "AB": 10,
+  "AC": 1,
+  "BC": 4,
+  "ABC": 0
+ },
+ "gene_nominalPSG": {
+  "A_only": 118,
+  "B_only": 185,
+  "C_only": 25,
+  "AB": 20,
+  "AC": 3,
+  "BC": 4,
+  "ABC": 0
+ },
+ "gene_strictEXP2": {
+  "A_only": 77,
+  "B_only": 198,
+  "C_only": 2,
+  "AB": 10,
+  "AC": 0,
+  "BC": 1,
+  "ABC": 0
+ },
+ "gene_PCG2units": {
+  "A_only": 22,
+  "B_only": 1500,
+  "C_only": 4,
+  "AB": 64,
+  "AC": 0,
+  "BC": 27,
+  "ABC": 1
+ },
+ "gene_all4_main": {
+  "A_only": 57,
+  "B_only": 159,
+  "C_only": 19,
+  "AB": 10,
+  "AC": 1,
+  "BC": 2,
+  "ABC": 0
+ },
+ "pathway_represented": {
+  "A_only": 2,
+  "B_only": 15,
+  "C_only": 126,
+  "AB": 3,
+  "AC": 54,
+  "BC": 79,
+  "ABC": 50
+ },
+ "pathway_enriched_qlt0.05": {
+  "A_only": 0,
+  "B_only": 0,
+  "C_only": 16,
+  "AB": 0,
+  "AC": 0,
+  "BC": 0,
+  "ABC": 0
+ },
+ "pathway_enriched_plt0.05": {
+  "A_only": 3,
+  "B_only": 9,
+  "C_only": 56,
+  "AB": 0,
+  "AC": 1,
+  "BC": 2,
+  "ABC": 0
+ },
+ "totals": {
+  "tested": 1941,
+  "PSG": 87,
+  "PSG_nominal": 141,
+  "PCG": 209,
+  "PCG2_any": 1882,
+  "PCG2_strict": 1592,
+  "EXP_hog": 32,
+  "EXP_og": 986,
+  "EXP2_og": 231,
+  "cafe_families": 16019,
+  "pcg_sites_fw": 238,
+  "pcg_sites_ctrl_mean": 216.8008999999994,
+  "pw_PSG": 109,
+  "pw_PCG": 147,
+  "pw_EXP": 309
+ }
+}

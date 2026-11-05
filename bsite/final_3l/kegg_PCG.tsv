@@ -1,0 +1,148 @@
+pathway	name	k_set	n_set	K_bg	N_bg	p	q	members
+map00510	N-Glycan biosynthesis	4	73	7	783	0.00197	0.21	HOG0021048,HOG0021202,HOG0021566,HOG0021718
+map00670	One carbon pool by folate	4	73	9	783	0.00612	0.21	HOG0009097,HOG0014264,HOG0021339,HOG0022697
+map00330	Arginine and proline metabolism	4	73	9	783	0.00612	0.21	HOG0008732,HOG0009166,HOG0014918,HOG0020833
+map00513	Various types of N-glycan biosynthesis	3	73	5	783	0.00679	0.21	HOG0021048,HOG0021202,HOG0021718
+map04141	Protein processing in endoplasmic reticulum	9	73	40	783	0.00823	0.21	HOG0018294,HOG0019942,HOG0021200,HOG0021202,HOG0021566,HOG0021718,HOG0023399,HOG0023800,HOG0024493
+map00053	Ascorbate and aldarate metabolism	2	73	2	783	0.00858	0.21	HOG0009166,HOG0023319
+map04540	Gap junction	2	73	3	783	0.0242	0.508	HOG0017674,HOG0021805
+map00562	Inositol phosphate metabolism	3	73	9	783	0.0433	0.608	HOG0011496,HOG0019474,HOG0020616
+map00860	Porphyrin metabolism	2	73	4	783	0.0455	0.608	HOG0023319,HOG0024017
+map00460	Cyanoamino acid metabolism	2	73	4	783	0.0455	0.608	HOG0014264,HOG0022640
+map00534	Glycosaminoglycan biosynthesis - heparan sulfate / heparin	2	73	4	783	0.0455	0.608	HOG0015221,HOG0022213
+map00260	Glycine, serine and threonine metabolism	3	73	10	783	0.0578	0.654	HOG0009097,HOG0014264,HOG0022451
+map05231	Choline metabolism in cancer	3	73	10	783	0.0578	0.654	HOG0022138,HOG0023319,HOG0023504
+map00515	Mannose type O-glycan biosynthesis	2	73	5	783	0.0713	0.672	HOG0015221,HOG0019664
+map00340	Histidine metabolism	2	73	5	783	0.0713	0.672	HOG0008732,HOG0009166
+map04711	Circadian rhythm - fly	1	73	1	783	0.0932	0.672	HOG0018834
+map05412	Arrhythmogenic right ventricular cardiomyopathy	1	73	1	783	0.0932	0.672	HOG0009197
+map00903	Limonene degradation	1	73	1	783	0.0932	0.672	HOG0009166
+map00625	Chloroalkane and chloroalkene degradation	1	73	1	783	0.0932	0.672	HOG0009166
+map00981	Insect hormone biosynthesis	1	73	1	783	0.0932	0.672	HOG0009166
+map01523	Antifolate resistance	2	73	6	783	0.101	0.672	HOG0014264,HOG0022697
+map00830	Retinol metabolism	2	73	6	783	0.101	0.672	HOG0009166,HOG0023319
+map00010	Glycolysis / Gluconeogenesis	3	73	13	783	0.113	0.72	HOG0009166,HOG0011496,HOG0022451
+map00680	Methane metabolism	2	73	7	783	0.132	0.764	HOG0014264,HOG0022451
+map00230	Purine metabolism	5	73	31	783	0.154	0.764	HOG0018979,HOG0020626,HOG0021805,HOG0021974,HOG0024604
+map04730	Long-term depression	1	73	2	783	0.178	0.764	HOG0021805
+map04514	Cell adhesion molecule (CAM) interaction	1	73	2	783	0.178	0.764	HOG0009197
+map05414	Dilated cardiomyopathy	1	73	2	783	0.178	0.764	HOG0009197
+map00960	Tropane, piperidine and pyridine alkaloid biosynthesis	1	73	2	783	0.178	0.764	HOG0014918
+map00220	Arginine biosynthesis	1	73	2	783	0.178	0.764	HOG0014918
+map00400	Phenylalanine, tyrosine and tryptophan biosynthesis	1	73	2	783	0.178	0.764	HOG0014918
+map00980	Metabolism of xenobiotics by cytochrome P450	1	73	2	783	0.178	0.764	HOG0023319
+map00440	Phosphonate and phosphinate metabolism	1	73	2	783	0.178	0.764	HOG0022138
+map00620	Pyruvate metabolism	2	73	9	783	0.201	0.764	HOG0009097,HOG0009166
+map04623	Cytosolic DNA-sensing pathway	2	73	9	783	0.201	0.764	HOG0019850,HOG0021974
+map04070	Phosphatidylinositol signaling system	2	73	9	783	0.201	0.764	HOG0019474,HOG0020616
+map00480	Glutathione metabolism	2	73	9	783	0.201	0.764	HOG0020626,HOG0022640
+map00380	Tryptophan metabolism	2	73	9	783	0.201	0.764	HOG0008732,HOG0009166
+map00270	Cysteine and methionine metabolism	2	73	10	783	0.237	0.764	HOG0014918,HOG0025472
+map04921	Oxytocin signaling pathway	2	73	10	783	0.237	0.764	HOG0015261,HOG0021805
+map04976	Bile secretion	1	73	3	783	0.255	0.764	HOG0020780
+map04970	Salivary secretion	1	73	3	783	0.255	0.764	HOG0021805
+map04640	Hematopoietic cell lineage	1	73	3	783	0.255	0.764	HOG0009197
+map05410	Hypertrophic cardiomyopathy	1	73	3	783	0.255	0.764	HOG0009197
+map04260	Cardiac muscle contraction	1	73	3	783	0.255	0.764	HOG0023030
+map00430	Taurine and hypotaurine metabolism	1	73	3	783	0.255	0.764	HOG0022640
+map04961	Endocrine and other factor-regulated calcium reabsorption	1	73	3	783	0.255	0.764	HOG0020393
+map00532	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate	1	73	3	783	0.255	0.764	HOG0015221
+map00982	Drug metabolism - cytochrome P450	1	73	3	783	0.255	0.764	HOG0023319
+map03420	Nucleotide excision repair	2	73	11	783	0.274	0.769	HOG0018979,HOG0024525
+map00564	Glycerophospholipid metabolism	2	73	11	783	0.274	0.769	HOG0022138,HOG0023504
+map05169	Epstein-Barr virus infection	4	73	30	783	0.304	0.769	HOG0019850,HOG0021974,HOG0022707,HOG0023325
+map00983	Drug metabolism - other enzymes	2	73	12	783	0.31	0.769	HOG0020626,HOG0023319
+map00900	Terpenoid backbone biosynthesis	1	73	4	783	0.324	0.769	HOG0020780
+map00730	Thiamine metabolism	1	73	4	783	0.324	0.769	HOG0024604
+map05130	Pathogenic Escherichia coli infection	1	73	4	783	0.324	0.769	HOG0017674
+map04512	ECM-receptor interaction	1	73	4	783	0.324	0.769	HOG0009197
+map00360	Phenylalanine metabolism	1	73	4	783	0.324	0.769	HOG0014918
+map00950	Isoquinoline alkaloid biosynthesis	1	73	4	783	0.324	0.769	HOG0014918
+map00720	Other carbon fixation pathways	1	73	4	783	0.324	0.769	HOG0022697
+map00140	Steroid hormone biosynthesis	1	73	4	783	0.324	0.769	HOG0023319
+map05204	Chemical carcinogenesis - DNA adducts	1	73	4	783	0.324	0.769	HOG0023319
+map04371	Apelin signaling pathway	2	73	13	783	0.346	0.778	HOG0010249,HOG0020616
+map00630	Glyoxylate and dicarboxylate metabolism	2	73	13	783	0.346	0.778	HOG0009097,HOG0014264
+map04145	Phagocytosis	2	73	14	783	0.381	0.778	HOG0017674,HOG0020616
+map04611	Platelet activation	1	73	5	783	0.388	0.778	HOG0021805
+map04713	Circadian entrainment	1	73	5	783	0.388	0.778	HOG0021805
+map00350	Tyrosine metabolism	1	73	5	783	0.388	0.778	HOG0014918
+map04914	Progesterone-mediated oocyte maturation	1	73	5	783	0.388	0.778	HOG0019166
+map04392	Hippo signaling pathway - multiple species	1	73	5	783	0.388	0.778	HOG0002052
+map00040	Pentose and glucuronate interconversions	1	73	5	783	0.388	0.778	HOG0023319
+map00565	Ether lipid metabolism	1	73	5	783	0.388	0.778	HOG0022138
+map04120	Ubiquitin mediated proteolysis	3	73	24	783	0.391	0.778	HOG0016823,HOG0022885,HOG0023399
+map04932	Non-alcoholic fatty liver disease	3	73	26	783	0.443	0.778	HOG0018294,HOG0020795,HOG0023030
+map04658	Th1 and Th2 cell differentiation	1	73	6	783	0.445	0.778	HOG0010249
+map04330	Notch signaling pathway	1	73	6	783	0.445	0.778	HOG0010249
+map04924	Renin secretion	1	73	6	783	0.445	0.778	HOG0021805
+map04136	Autophagy - other	1	73	6	783	0.445	0.778	HOG0020616
+map00600	Sphingolipid metabolism	1	73	6	783	0.445	0.778	HOG0016262
+map04142	Lysosome biogenesis	2	73	16	783	0.449	0.778	HOG0006752,HOG0020393
+map04138	Autophagy - yeast	2	73	16	783	0.449	0.778	HOG0016561,HOG0020616
+map03010	Ribosome	3	73	27	783	0.469	0.778	HOG0023581,HOG0023857,HOG0024864
+map00240	Pyrimidine metabolism	3	73	27	783	0.469	0.778	HOG0018979,HOG0020626,HOG0021974
+map05012	Parkinson disease	3	73	27	783	0.469	0.778	HOG0020795,HOG0023030,HOG0023399
+map04140	Autophagy - animal	2	73	17	783	0.481	0.778	HOG0018294,HOG0020616
+map00970	Aminoacyl-tRNA biosynthesis	1	73	7	783	0.497	0.778	HOG0017978
+map03060	Protein export	1	73	7	783	0.497	0.778	HOG0024406
+map04270	Vascular smooth muscle contraction	1	73	7	783	0.497	0.778	HOG0021805
+map04622	RIG-I-like receptor signaling pathway	1	73	7	783	0.497	0.778	HOG0019850
+map04740	Olfactory transduction	1	73	7	783	0.497	0.778	HOG0012001
+map00250	Alanine, aspartate and glutamate metabolism	1	73	7	783	0.497	0.778	HOG0014918
+map03020	RNA polymerase	1	73	7	783	0.497	0.778	HOG0021974
+map00410	beta-Alanine metabolism	1	73	7	783	0.497	0.778	HOG0009166
+map00561	Glycerolipid metabolism	1	73	7	783	0.497	0.778	HOG0009166
+map01522	Endocrine resistance	1	73	8	783	0.545	0.785	HOG0010249
+map04064	NF-kappa B signaling pathway	1	73	8	783	0.545	0.785	HOG0019850
+map05160	Hepatitis C	1	73	8	783	0.545	0.785	HOG0019850
+map04810	Regulation of actin cytoskeleton	1	73	8	783	0.545	0.785	HOG0009197
+map00710	Carbon fixation by Calvin cycle	1	73	8	783	0.545	0.785	HOG0014918
+map04391	Hippo signaling pathway - fly	1	73	8	783	0.545	0.785	HOG0002052
+map03410	Base excision repair	1	73	8	783	0.545	0.785	HOG0018979
+map05230	Central carbon metabolism in cancer	1	73	8	783	0.545	0.785	HOG0022451
+map03013	Nucleocytoplasmic transport	3	73	31	783	0.566	0.801	HOG0018675,HOG0020083,HOG0022707
+map00020	Citrate cycle (TCA cycle)	1	73	9	783	0.588	0.801	HOG0020795
+map04714	Thermogenesis	3	73	32	783	0.588	0.801	HOG0019099,HOG0020795,HOG0023030
+map05164	Influenza A	2	73	21	783	0.599	0.801	HOG0017971,HOG0019850
+map03008	Ribosome biogenesis in eukaryotes	2	73	21	783	0.599	0.801	HOG0018675,HOG0019942
+map03040	Spliceosome	2	73	22	783	0.625	0.801	HOG0021352,HOG0023511
+map05224	Breast cancer	1	73	10	783	0.626	0.801	HOG0010249
+map04022	cGMP-PKG signaling pathway	1	73	10	783	0.626	0.801	HOG0021805
+map03022	Basal transcription factors	1	73	10	783	0.626	0.801	HOG0024525
+map04721	Synaptic vesicle cycle	1	73	10	783	0.626	0.801	HOG0020393
+map05225	Hepatocellular carcinoma	1	73	10	783	0.626	0.801	HOG0019099
+map05134	Legionellosis	1	73	10	783	0.626	0.801	HOG0019942
+map03030	DNA replication	1	73	10	783	0.626	0.801	HOG0018979
+map05010	Alzheimer disease	3	73	35	783	0.651	0.817	HOG0018294,HOG0020795,HOG0023030
+map03050	Proteasome	1	73	11	783	0.662	0.817	HOG0023325
+map04510	Focal adhesion	1	73	11	783	0.662	0.817	HOG0009197
+map00071	Fatty acid degradation	1	73	11	783	0.662	0.817	HOG0009166
+map04152	AMPK signaling pathway	2	73	24	783	0.673	0.824	HOG0015261,HOG0020780
+map05222	Small cell lung cancer	1	73	12	783	0.694	0.824	HOG0009197
+map00310	Lysine degradation	1	73	12	783	0.694	0.824	HOG0009166
+map05165	Human papillomavirus infection	2	73	25	783	0.696	0.824	HOG0009197,HOG0010249
+map05016	Huntington disease	3	73	38	783	0.707	0.824	HOG0020393,HOG0020795,HOG0023030
+map04668	TNF signaling pathway	1	73	13	783	0.723	0.824	HOG0010249
+map04723	Retrograde endocannabinoid signaling	1	73	13	783	0.723	0.824	HOG0010827
+map04217	Necroptosis	1	73	13	783	0.723	0.824	HOG0023012
+map04210	Apoptosis	1	73	13	783	0.723	0.824	HOG0018294
+map04922	Glucagon signaling pathway	1	73	13	783	0.723	0.824	HOG0022451
+map04114	Oocyte meiosis	1	73	14	783	0.749	0.835	HOG0019166
+map03018	RNA degradation	1	73	14	783	0.749	0.835	HOG0017451
+map00190	Oxidative phosphorylation	2	73	28	783	0.755	0.835	HOG0020795,HOG0023030
+map04144	Endocytosis	2	73	29	783	0.773	0.835	HOG0020393,HOG0023012
+map03015	mRNA surveillance pathway	1	73	15	783	0.773	0.835	HOG0022677
+map05206	MicroRNAs in cancer	1	73	15	783	0.773	0.835	HOG0025828
+map00280	Valine, leucine and isoleucine degradation	1	73	15	783	0.773	0.835	HOG0009166
+map04910	Insulin signaling pathway	1	73	16	783	0.794	0.84	HOG0016823
+map05162	Measles	1	73	16	783	0.794	0.84	HOG0019850
+map04068	FoxO signaling pathway	1	73	16	783	0.794	0.84	HOG0019166
+map05167	Kaposi sarcoma-associated herpesvirus infection	1	73	17	783	0.814	0.849	HOG0020616
+map04110	Cell cycle	1	73	17	783	0.814	0.849	HOG0019166
+map05152	Tuberculosis	1	73	18	783	0.832	0.861	HOG0020616
+map05161	Hepatitis B	1	73	19	783	0.848	0.871	HOG0019850
+map05168	Herpes simplex virus 1 infection	1	73	24	783	0.908	0.927	HOG0019850
+map05200	Pathways in cancer	2	73	45	783	0.937	0.945	HOG0009197,HOG0010249
+map04151	PI3K-Akt signaling pathway	1	73	28	783	0.939	0.945	HOG0009197
+map05166	Human T-cell leukemia virus 1 infection	1	73	31	783	0.955	0.955	HOG0018979
